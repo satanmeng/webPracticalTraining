@@ -1,0 +1,31 @@
+<include file="head" />
+           <script>
+            function change_pic(){
+            var imgObj = document.getElementById("caocao_pic");
+            var Flag=(imgObj.getAttribute("src",2)=="img/41.png")
+            imgObj.src=Flag?"img/42.png":"img/41.png";
+            }
+         </script>
+	<body>
+		<div class="red"><center>抢票<a>返回</a></center></div>
+		<div class="scamTickets">
+	<div class="scamTicketstop">
+	    <form>
+	    	<div class="IDcard">身份证号：<input type="text" placeholder="请输入你的身份证号码" style="width: 8.8rem ;"/> </div>
+	        <div class="mobile">手机号码：<input type="text" placeholder="11位手机号" style="width: 8.8rem ;"/> </div>
+         	<div class="verify">验            &nbsp;证&nbsp;码：<input type="text" placeholder="输入验证码" style="width: 5.1rem ;"/> </div>
+         	<a><div class="code">获取验证码</div></a>
+	    </form>
+     	<div class="agree">
+            <div class="click">
+            	<img src="img/41.png" class="wujiang_pic_size" id="caocao_pic" onClick="change_pic()">
+            </div>	
+            <div class="rule">同意</div>
+            <div class="orang">《抢票细则》</div>
+     	</div>
+     	<a><div class="buttom">抢&nbsp&nbsp&nbsp&nbsp票</div></a>
+	</div>
+	<div class="scamTicketsbuttom"></div>
+	</div>
+	</body>
+</html>

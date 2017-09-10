@@ -1,0 +1,1553 @@
+[ 2017-09-07T08:42:21+08:00 ] 0.0.0.0 /webshixun/application.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.175006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.175099s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000444s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000327s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000237s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001529s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000473s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2017-09-07T08:43:27+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/checklogin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000589s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.004462s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `username` = 'satan' ) AND ( `password` = '1111' ) LIMIT 1   [ RunTime:0.000437s ]
+
+[ 2017-09-07T08:43:28+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000534s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.004852s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 7 行.
+NOTIC: [8] Undefined variable: map F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` LIMIT 1   [ RunTime:0.000564s ]
+SQL: SELECT * FROM `trains` LIMIT 0,5   [ RunTime:0.000870s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.005903s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000600s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000434s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000417s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000512s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 140 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 141 行.
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 146 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 152 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.004855s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 1 ) LIMIT 1   [ RunTime:0.000778s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 2 ) LIMIT 1   [ RunTime:0.000553s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 3 ) LIMIT 1   [ RunTime:0.000620s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 4 ) LIMIT 1   [ RunTime:0.000583s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 5 ) LIMIT 1   [ RunTime:0.000852s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.048459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048521s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000458s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000278s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000192s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001362s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000470s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2017-09-07T08:43:41+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000503s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.004002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` WHERE ( `start` = '长春' ) AND ( `end` = '杭州' ) LIMIT 1   [ RunTime:0.000506s ]
+SQL: SELECT * FROM `trains` WHERE ( `start` = '长春' ) AND ( `end` = '杭州' ) LIMIT 0,5   [ RunTime:0.000504s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.004220s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000555s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000424s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000403s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.004397s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 1 ) LIMIT 1   [ RunTime:0.000460s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020482s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000394s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000246s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000203s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001269s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000391s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2017-09-07T08:43:47+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000517s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.004420s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` WHERE ( `start` = '' ) AND ( `end` = '' ) LIMIT 1   [ RunTime:0.000497s ]
+NOTIC: [8] Undefined variable: listRows F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.004861s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000620s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000452s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000430s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000441s ]
+NOTIC: [8] Undefined variable: list F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 184 行.
+NOTIC: [8] Undefined variable: page F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 199 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015765s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000407s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000245s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000176s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001208s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000381s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2017-09-07T08:43:52+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000459s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.003932s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` WHERE ( `start` = '' ) AND ( `end` = '' ) LIMIT 1   [ RunTime:0.000512s ]
+NOTIC: [8] Undefined variable: listRows F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.004077s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000561s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000437s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000441s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000433s ]
+NOTIC: [8] Undefined variable: list F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 184 行.
+NOTIC: [8] Undefined variable: page F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 199 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000359s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000241s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000177s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001207s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000380s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2017-09-07T08:45:08+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000752s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.003866s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` WHERE ( `start` = '' ) AND ( `end` = '' ) LIMIT 1   [ RunTime:0.000454s ]
+NOTIC: [8] Undefined variable: listRows F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 50 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.004004s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000483s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000392s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000420s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000414s ]
+NOTIC: [8] Undefined variable: list F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 184 行.
+NOTIC: [8] Undefined variable: page F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 199 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015011s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000454s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000306s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000239s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001905s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000657s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2017-09-07T08:45:13+08:00 ] 0.0.0.0 /webshixun/application.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+
+[ 2017-09-07T08:45:14+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000688s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.003863s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 7 行.
+NOTIC: [8] Undefined variable: map F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 14 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` LIMIT 1   [ RunTime:0.000459s ]
+SQL: SELECT * FROM `trains` LIMIT 0,5   [ RunTime:0.000459s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.004178s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000554s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000442s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000435s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000390s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 140 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 141 行.
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 146 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 152 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.005086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 1 ) LIMIT 1   [ RunTime:0.000557s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 2 ) LIMIT 1   [ RunTime:0.000389s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 3 ) LIMIT 1   [ RunTime:0.000410s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 4 ) LIMIT 1   [ RunTime:0.000372s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 5 ) LIMIT 1   [ RunTime:0.000371s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023471s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000358s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000299s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000174s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001241s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000390s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2017-09-07T08:45:38+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000608s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.003939s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` WHERE ( `start` = '' ) AND ( `end` = '' ) LIMIT 1   [ RunTime:0.000560s ]
+NOTIC: [8] Undefined variable: listRows F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 50 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.004652s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000548s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000374s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000396s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000388s ]
+NOTIC: [8] Undefined variable: list F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 184 行.
+NOTIC: [8] Undefined variable: page F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 199 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015544s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000427s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000334s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000235s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001440s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000476s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2017-09-07T08:47:42+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000720s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.004115s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` WHERE ( `start` = '' ) AND ( `end` = '' ) LIMIT 1   [ RunTime:0.000424s ]
+NOTIC: [8] Undefined variable: listRows F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 52 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.003839s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000452s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000336s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000326s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000324s ]
+NOTIC: [8] Undefined variable: list F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 184 行.
+NOTIC: [8] Undefined variable: page F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 199 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014644s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000610s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000325s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000238s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001650s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000483s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2017-09-07T08:47:47+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000494s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.003896s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 7 行.
+NOTIC: [2] Missing argument 2 for TrainsAction::_list(), called in F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php on line 15 and defined F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 22 行.
+NOTIC: [8] Undefined variable: map F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 24 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` LIMIT 1   [ RunTime:0.000429s ]
+NOTIC: [8] Undefined variable: map F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 37 行.
+SQL: SELECT * FROM `trains` LIMIT 0,5   [ RunTime:0.001002s ]
+NOTIC: [8] Undefined variable: map F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 39 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.004051s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000519s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000385s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000800s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000434s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 140 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 141 行.
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 146 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 152 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003829s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 1 ) LIMIT 1   [ RunTime:0.000460s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 2 ) LIMIT 1   [ RunTime:0.000370s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 3 ) LIMIT 1   [ RunTime:0.000360s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 4 ) LIMIT 1   [ RunTime:0.000414s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 5 ) LIMIT 1   [ RunTime:0.000360s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021883s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000361s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000242s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000189s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001191s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000440s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2017-09-07T08:47:50+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000839s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.004562s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` WHERE ( `start` = '' ) AND ( `end` = '' ) LIMIT 1   [ RunTime:0.000457s ]
+NOTIC: [8] Undefined variable: listRows F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 52 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.004108s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000576s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000392s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000388s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000352s ]
+NOTIC: [8] Undefined variable: list F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 184 行.
+NOTIC: [8] Undefined variable: page F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 199 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013846s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000409s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000249s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000172s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001240s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000386s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2017-09-07T08:48:46+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000606s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.003901s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 7 行.
+NOTIC: [8] Undefined variable: map F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` LIMIT 1   [ RunTime:0.000624s ]
+SQL: SELECT * FROM `trains` LIMIT 0,5   [ RunTime:0.000516s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.003903s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000424s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000335s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000326s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000409s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 140 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 141 行.
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 146 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 152 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.004570s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 1 ) LIMIT 1   [ RunTime:0.000370s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 2 ) LIMIT 1   [ RunTime:0.000307s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 3 ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 4 ) LIMIT 1   [ RunTime:0.000305s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 5 ) LIMIT 1   [ RunTime:0.000303s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021725s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000455s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000304s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000305s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001554s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000583s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2017-09-07T08:48:50+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/buyticket
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000483s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003724s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `uid` = 1 ) AND ( `tid` = 2 ) LIMIT 1   [ RunTime:0.000417s ]
+
+[ 2017-09-07T08:48:52+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002072s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002203s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.004891s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 7 行.
+NOTIC: [8] Undefined variable: map F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` LIMIT 1   [ RunTime:0.000348s ]
+SQL: SELECT * FROM `trains` LIMIT 0,5   [ RunTime:0.000444s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.003862s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000634s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000350s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000455s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000600s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 140 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 141 行.
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 146 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 152 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.004736s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 1 ) LIMIT 1   [ RunTime:0.000414s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 2 ) LIMIT 1   [ RunTime:0.000305s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 3 ) LIMIT 1   [ RunTime:0.000335s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 4 ) LIMIT 1   [ RunTime:0.000304s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 5 ) LIMIT 1   [ RunTime:0.000332s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022010s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000362s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000268s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000292s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001410s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000537s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2017-09-07T08:49:02+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/buyticket
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000578s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003718s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `uid` = 1 ) AND ( `tid` = 3 ) LIMIT 1   [ RunTime:0.000432s ]
+SQL: INSERT INTO `order` (`uid`,`tid`) VALUES (1,3) [ RunTime:0.000395s ]
+
+[ 2017-09-07T08:49:05+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000490s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.003863s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 7 行.
+NOTIC: [8] Undefined variable: map F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` LIMIT 1   [ RunTime:0.000510s ]
+SQL: SELECT * FROM `trains` LIMIT 0,5   [ RunTime:0.000502s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.003979s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000520s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000369s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000334s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000581s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 140 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 141 行.
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 146 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 152 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.004344s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 1 ) LIMIT 1   [ RunTime:0.000493s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 2 ) LIMIT 1   [ RunTime:0.000473s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 3 ) LIMIT 1   [ RunTime:0.000460s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 4 ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 5 ) LIMIT 1   [ RunTime:0.000343s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022764s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000439s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000328s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000234s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001455s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000487s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2017-09-07T08:49:09+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/table
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000595s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003746s ]
+SQL: SELECT * FROM `order` WHERE ( `uid` = 1 )  [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.003794s ]
+SQL: SELECT `realname` FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000370s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000515s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000348s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000309s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.003782s ]
+SQL: SELECT `trains` FROM `trains` WHERE ( nkey='1' ) LIMIT 1   [ RunTime:0.000384s ]
+SQL: SELECT `start` FROM `trains` WHERE ( nkey='1' ) LIMIT 1   [ RunTime:0.000348s ]
+SQL: SELECT `end` FROM `trains` WHERE ( nkey='1' ) LIMIT 1   [ RunTime:0.000311s ]
+SQL: SELECT `stime` FROM `trains` WHERE ( nkey='1' ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SELECT `trains` FROM `trains` WHERE ( nkey='2' ) LIMIT 1   [ RunTime:0.000312s ]
+SQL: SELECT `start` FROM `trains` WHERE ( nkey='2' ) LIMIT 1   [ RunTime:0.000395s ]
+SQL: SELECT `end` FROM `trains` WHERE ( nkey='2' ) LIMIT 1   [ RunTime:0.000393s ]
+SQL: SELECT `stime` FROM `trains` WHERE ( nkey='2' ) LIMIT 1   [ RunTime:0.000368s ]
+SQL: SELECT `trains` FROM `trains` WHERE ( nkey='3' ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: SELECT `start` FROM `trains` WHERE ( nkey='3' ) LIMIT 1   [ RunTime:0.000330s ]
+SQL: SELECT `end` FROM `trains` WHERE ( nkey='3' ) LIMIT 1   [ RunTime:0.000321s ]
+SQL: SELECT `stime` FROM `trains` WHERE ( nkey='3' ) LIMIT 1   [ RunTime:0.000318s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021400s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000531s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000362s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000234s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001685s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000538s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2017-09-07T08:49:12+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/tuipiao
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000488s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003984s ]
+SQL: DELETE FROM `order` WHERE ( `nkey` = 11 ) [ RunTime:0.000437s ]
+
+[ 2017-09-07T08:49:15+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/table
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000619s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.004256s ]
+SQL: SELECT * FROM `order` WHERE ( `uid` = 1 )  [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.004090s ]
+SQL: SELECT `realname` FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000468s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000730s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000414s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000406s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.004434s ]
+SQL: SELECT `trains` FROM `trains` WHERE ( nkey='1' ) LIMIT 1   [ RunTime:0.000446s ]
+SQL: SELECT `start` FROM `trains` WHERE ( nkey='1' ) LIMIT 1   [ RunTime:0.000354s ]
+SQL: SELECT `end` FROM `trains` WHERE ( nkey='1' ) LIMIT 1   [ RunTime:0.000354s ]
+SQL: SELECT `stime` FROM `trains` WHERE ( nkey='1' ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SELECT `trains` FROM `trains` WHERE ( nkey='2' ) LIMIT 1   [ RunTime:0.000362s ]
+SQL: SELECT `start` FROM `trains` WHERE ( nkey='2' ) LIMIT 1   [ RunTime:0.000414s ]
+SQL: SELECT `end` FROM `trains` WHERE ( nkey='2' ) LIMIT 1   [ RunTime:0.000363s ]
+SQL: SELECT `stime` FROM `trains` WHERE ( nkey='2' ) LIMIT 1   [ RunTime:0.000352s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019191s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000437s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000249s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000193s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001417s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000483s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2017-09-07T08:49:18+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000878s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001504s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.004061s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 7 行.
+NOTIC: [8] Undefined variable: map F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` LIMIT 1   [ RunTime:0.000333s ]
+SQL: SELECT * FROM `trains` LIMIT 0,5   [ RunTime:0.000368s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.004885s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000394s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000608s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000653s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000367s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 140 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 141 行.
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 146 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 152 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.004462s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 1 ) LIMIT 1   [ RunTime:0.000436s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 2 ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 3 ) LIMIT 1   [ RunTime:0.000375s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 4 ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 5 ) LIMIT 1   [ RunTime:0.000312s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023934s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000403s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000292s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000200s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001391s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000599s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2017-09-07T08:49:31+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/logout/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000508s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+
+[ 2017-09-07T08:49:31+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000449s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005502s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000266s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000309s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000174s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001128s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000524s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2017-09-07T08:56:07+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000674s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.004091s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 7 行.
+NOTIC: [8] Undefined variable: map F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` LIMIT 1   [ RunTime:0.000439s ]
+SQL: SELECT * FROM `trains` LIMIT 0,5   [ RunTime:0.000466s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.004443s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000529s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000421s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000436s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000399s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 140 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 141 行.
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 146 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 152 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.004348s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 1 ) LIMIT 1   [ RunTime:0.000608s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 2 ) LIMIT 1   [ RunTime:0.000385s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 3 ) LIMIT 1   [ RunTime:0.000445s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 4 ) LIMIT 1   [ RunTime:0.000470s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 5 ) LIMIT 1   [ RunTime:0.000385s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023338s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000473s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000308s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000269s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001549s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000484s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2017-09-07T08:56:18+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/buyticket
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000501s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 115 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003675s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `uid` = null ) AND ( `tid` = 1 ) LIMIT 1   [ RunTime:0.000271s ]
+SQL: INSERT INTO `order` (`uid`,`tid`) VALUES (null,1) [ RunTime:0.000203s ]
+
+[ 2017-09-07T08:56:19+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/buyticket
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000648s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 115 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003739s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `uid` = null ) AND ( `tid` = 1 ) LIMIT 1   [ RunTime:0.000456s ]
+SQL: INSERT INTO `order` (`uid`,`tid`) VALUES (null,1) [ RunTime:0.000369s ]
+
+[ 2017-09-07T08:56:22+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001238s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001565s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.007064s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 7 行.
+NOTIC: [8] Undefined variable: map F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` LIMIT 1   [ RunTime:0.002410s ]
+SQL: SELECT * FROM `trains` LIMIT 0,5   [ RunTime:0.000562s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.009504s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000396s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000316s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000325s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000315s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 140 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 141 行.
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 146 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 152 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.005431s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 1 ) LIMIT 1   [ RunTime:0.000365s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 2 ) LIMIT 1   [ RunTime:0.000294s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 3 ) LIMIT 1   [ RunTime:0.000298s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 4 ) LIMIT 1   [ RunTime:0.000330s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 5 ) LIMIT 1   [ RunTime:0.000308s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029342s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000443s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000305s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000311s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001547s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000679s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000732s ]
+
+[ 2017-09-07T08:56:32+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/table
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000608s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.004211s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 91 行.
+SQL: SELECT * FROM `order` WHERE ( `uid` = null )  [ RunTime:0.000523s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 94 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.003779s ]
+SQL: SELECT `realname` FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000422s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000589s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000420s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000588s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000807s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010653s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000497s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000342s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000243s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001529s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000438s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2017-09-07T08:56:36+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000471s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.003865s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 7 行.
+NOTIC: [8] Undefined variable: map F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` LIMIT 1   [ RunTime:0.000253s ]
+SQL: SELECT * FROM `trains` LIMIT 0,5   [ RunTime:0.000286s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.003676s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000253s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000221s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000236s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000239s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 140 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 141 行.
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 146 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 152 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003997s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 1 ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 2 ) LIMIT 1   [ RunTime:0.000186s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 3 ) LIMIT 1   [ RunTime:0.000193s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 4 ) LIMIT 1   [ RunTime:0.000184s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 5 ) LIMIT 1   [ RunTime:0.000183s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019156s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000366s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000246s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000175s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001211s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000714s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2017-09-07T08:56:42+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/buyticket
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000449s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 115 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003849s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `uid` = null ) AND ( `tid` = 2 ) LIMIT 1   [ RunTime:0.000430s ]
+SQL: INSERT INTO `order` (`uid`,`tid`) VALUES (null,2) [ RunTime:0.000342s ]
+
+[ 2017-09-07T08:56:44+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000692s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.003929s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 7 行.
+NOTIC: [8] Undefined variable: map F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` LIMIT 1   [ RunTime:0.000363s ]
+SQL: SELECT * FROM `trains` LIMIT 0,5   [ RunTime:0.000400s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.004364s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000428s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000372s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000360s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000387s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 140 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 141 行.
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 146 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 152 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.004019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 1 ) LIMIT 1   [ RunTime:0.000437s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 2 ) LIMIT 1   [ RunTime:0.000333s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 3 ) LIMIT 1   [ RunTime:0.000334s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 4 ) LIMIT 1   [ RunTime:0.000333s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 5 ) LIMIT 1   [ RunTime:0.000332s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022543s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022595s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000360s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000301s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000180s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001222s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000558s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2017-09-07T08:56:50+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/table
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000512s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003958s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 91 行.
+SQL: SELECT * FROM `order` WHERE ( `uid` = null )  [ RunTime:0.000397s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 94 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.003953s ]
+SQL: SELECT `realname` FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000359s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000608s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000624s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000399s ]
+NOTIC: [8] Undefined index: userid F:\php\study\WWW\webshixun\Application\Common\common.php 第 37 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = null ) LIMIT 1   [ RunTime:0.000330s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009840s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009887s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000441s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000256s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000292s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001504s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000452s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2017-09-07T08:57:01+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/logout/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000448s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+
+[ 2017-09-07T08:57:01+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/error/$weizi/%E5%B7%B2%E7%BB%8F%E7%99%BB%E5%87%BA%EF%BC%81.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000486s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005186s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000283s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000249s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000384s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001463s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000466s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2017-09-07T08:57:03+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000615s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005397s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000294s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000374s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001178s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002525s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000461s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2017-09-07T08:57:10+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/checklogin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000473s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.004855s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `username` = 'satan' ) AND ( `password` = '1111' ) LIMIT 1   [ RunTime:0.000586s ]
+
+[ 2017-09-07T08:57:11+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000458s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.004444s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 7 行.
+NOTIC: [8] Undefined variable: map F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` LIMIT 1   [ RunTime:0.000319s ]
+SQL: SELECT * FROM `trains` LIMIT 0,5   [ RunTime:0.000357s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.004275s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000575s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000312s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000352s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 140 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 141 行.
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 146 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 152 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.004054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 1 ) LIMIT 1   [ RunTime:0.000363s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 2 ) LIMIT 1   [ RunTime:0.000396s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 3 ) LIMIT 1   [ RunTime:0.000377s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 4 ) LIMIT 1   [ RunTime:0.000306s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 5 ) LIMIT 1   [ RunTime:0.000287s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022248s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000453s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000247s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000342s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001646s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000543s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000617s ]
+
+[ 2017-09-07T08:58:00+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/logout/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000468s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+
+[ 2017-09-07T08:58:00+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000474s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005437s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000267s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000240s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000316s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001383s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000457s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2017-09-07T08:58:07+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/checklogin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000469s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.004752s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `username` = 'satan' ) AND ( `password` = '1111' ) LIMIT 1   [ RunTime:0.000487s ]
+
+[ 2017-09-07T08:58:08+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000471s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.003794s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 7 行.
+NOTIC: [8] Undefined variable: map F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` LIMIT 1   [ RunTime:0.000243s ]
+SQL: SELECT * FROM `trains` LIMIT 0,5   [ RunTime:0.000310s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.004164s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000282s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000284s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000283s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 140 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 141 行.
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 146 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 152 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003728s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 1 ) LIMIT 1   [ RunTime:0.000301s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 2 ) LIMIT 1   [ RunTime:0.000240s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 3 ) LIMIT 1   [ RunTime:0.000234s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 4 ) LIMIT 1   [ RunTime:0.000332s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 5 ) LIMIT 1   [ RunTime:0.000232s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022913s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000457s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000281s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000351s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001726s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000758s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2017-09-07T08:58:13+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/table
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000468s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.004278s ]
+SQL: SELECT * FROM `order` WHERE ( `uid` = 1 )  [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.004020s ]
+SQL: SELECT `realname` FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000574s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000736s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000444s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000405s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.004989s ]
+SQL: SELECT `trains` FROM `trains` WHERE ( nkey='1' ) LIMIT 1   [ RunTime:0.000583s ]
+SQL: SELECT `start` FROM `trains` WHERE ( nkey='1' ) LIMIT 1   [ RunTime:0.000391s ]
+SQL: SELECT `end` FROM `trains` WHERE ( nkey='1' ) LIMIT 1   [ RunTime:0.000386s ]
+SQL: SELECT `stime` FROM `trains` WHERE ( nkey='1' ) LIMIT 1   [ RunTime:0.000381s ]
+SQL: SELECT `trains` FROM `trains` WHERE ( nkey='2' ) LIMIT 1   [ RunTime:0.000393s ]
+SQL: SELECT `start` FROM `trains` WHERE ( nkey='2' ) LIMIT 1   [ RunTime:0.000374s ]
+SQL: SELECT `end` FROM `trains` WHERE ( nkey='2' ) LIMIT 1   [ RunTime:0.000362s ]
+SQL: SELECT `stime` FROM `trains` WHERE ( nkey='2' ) LIMIT 1   [ RunTime:0.000369s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019371s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000383s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000246s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000287s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001457s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000432s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2017-09-07T08:58:17+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000452s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.003919s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 7 行.
+NOTIC: [8] Undefined variable: map F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` LIMIT 1   [ RunTime:0.000360s ]
+SQL: SELECT * FROM `trains` LIMIT 0,5   [ RunTime:0.000708s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.003928s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000459s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000349s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000358s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000349s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 140 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 141 行.
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 146 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 152 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003711s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 1 ) LIMIT 1   [ RunTime:0.000464s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 2 ) LIMIT 1   [ RunTime:0.000399s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 3 ) LIMIT 1   [ RunTime:0.000676s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 4 ) LIMIT 1   [ RunTime:0.000743s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 5 ) LIMIT 1   [ RunTime:0.000371s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022018s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000429s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000295s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000363s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001625s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000544s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2017-09-07T08:58:20+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/buyticket
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000895s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003809s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `uid` = 1 ) AND ( `tid` = 2 ) LIMIT 1   [ RunTime:0.000382s ]
+
+[ 2017-09-07T08:58:22+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000635s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.004377s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 7 行.
+NOTIC: [8] Undefined variable: map F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` LIMIT 1   [ RunTime:0.000439s ]
+SQL: SELECT * FROM `trains` LIMIT 0,5   [ RunTime:0.000626s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.005136s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000572s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000422s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000467s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000576s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 140 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 141 行.
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 146 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 152 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003926s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 1 ) LIMIT 1   [ RunTime:0.000467s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 2 ) LIMIT 1   [ RunTime:0.000385s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 3 ) LIMIT 1   [ RunTime:0.000385s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 4 ) LIMIT 1   [ RunTime:0.000424s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 5 ) LIMIT 1   [ RunTime:0.000659s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024840s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000504s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000298s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000343s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002049s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000739s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000822s ]
+
+[ 2017-09-07T08:58:25+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/buyticket
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000469s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003656s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `uid` = 1 ) AND ( `tid` = 4 ) LIMIT 1   [ RunTime:0.000390s ]
+SQL: INSERT INTO `order` (`uid`,`tid`) VALUES (1,4) [ RunTime:0.000260s ]
+
+[ 2017-09-07T08:58:27+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001749s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001922s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.003862s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 7 行.
+NOTIC: [8] Undefined variable: map F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 12 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `trains` LIMIT 1   [ RunTime:0.000345s ]
+SQL: SELECT * FROM `trains` LIMIT 0,5   [ RunTime:0.000380s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.003921s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000384s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000313s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000308s ]
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 140 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 141 行.
+NOTIC: [8] Undefined index: start F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 146 行.
+NOTIC: [8] Undefined index: end F:\php\study\WWW\webshixun\Application\Runtime\Cache\5c788949d2c0a2303b0ea64ddbafe9c2.php 第 152 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003725s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 1 ) LIMIT 1   [ RunTime:0.000376s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 2 ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 3 ) LIMIT 1   [ RunTime:0.000302s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 4 ) LIMIT 1   [ RunTime:0.000266s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `tid` = 5 ) LIMIT 1   [ RunTime:0.000266s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020298s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000407s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000262s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000222s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001292s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000409s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000462s ]
+
+[ 2017-09-07T08:58:31+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/table
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000476s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003752s ]
+SQL: SELECT * FROM `order` WHERE ( `uid` = 1 )  [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.003885s ]
+SQL: SELECT `realname` FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000460s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000625s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000371s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000354s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.003869s ]
+SQL: SELECT `trains` FROM `trains` WHERE ( nkey='1' ) LIMIT 1   [ RunTime:0.000439s ]
+SQL: SELECT `start` FROM `trains` WHERE ( nkey='1' ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: SELECT `end` FROM `trains` WHERE ( nkey='1' ) LIMIT 1   [ RunTime:0.000347s ]
+SQL: SELECT `stime` FROM `trains` WHERE ( nkey='1' ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: SELECT `trains` FROM `trains` WHERE ( nkey='2' ) LIMIT 1   [ RunTime:0.000346s ]
+SQL: SELECT `start` FROM `trains` WHERE ( nkey='2' ) LIMIT 1   [ RunTime:0.000347s ]
+SQL: SELECT `end` FROM `trains` WHERE ( nkey='2' ) LIMIT 1   [ RunTime:0.000399s ]
+SQL: SELECT `stime` FROM `trains` WHERE ( nkey='2' ) LIMIT 1   [ RunTime:0.000586s ]
+SQL: SELECT `trains` FROM `trains` WHERE ( nkey='4' ) LIMIT 1   [ RunTime:0.000781s ]
+SQL: SELECT `start` FROM `trains` WHERE ( nkey='4' ) LIMIT 1   [ RunTime:0.000490s ]
+SQL: SELECT `end` FROM `trains` WHERE ( nkey='4' ) LIMIT 1   [ RunTime:0.000363s ]
+SQL: SELECT `stime` FROM `trains` WHERE ( nkey='4' ) LIMIT 1   [ RunTime:0.000351s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021659s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021770s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000617s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000310s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000320s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001857s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000586s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2017-09-07T08:58:34+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/tuipiao
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000463s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003858s ]
+SQL: DELETE FROM `order` WHERE ( `nkey` = 8 ) [ RunTime:0.000368s ]
+
+[ 2017-09-07T08:58:36+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/table
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000830s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.003848s ]
+SQL: SELECT * FROM `order` WHERE ( `uid` = 1 )  [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.004475s ]
+SQL: SELECT `realname` FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000403s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000574s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000365s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000538s ]
+SQL: SELECT * FROM `userinfo` WHERE ( `nkey` = 1 ) LIMIT 1   [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `trains` [ RunTime:0.004055s ]
+SQL: SELECT `trains` FROM `trains` WHERE ( nkey='2' ) LIMIT 1   [ RunTime:0.000409s ]
+SQL: SELECT `start` FROM `trains` WHERE ( nkey='2' ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: SELECT `end` FROM `trains` WHERE ( nkey='2' ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: SELECT `stime` FROM `trains` WHERE ( nkey='2' ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: SELECT `trains` FROM `trains` WHERE ( nkey='4' ) LIMIT 1   [ RunTime:0.000318s ]
+SQL: SELECT `start` FROM `trains` WHERE ( nkey='4' ) LIMIT 1   [ RunTime:0.000364s ]
+SQL: SELECT `end` FROM `trains` WHERE ( nkey='4' ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SELECT `stime` FROM `trains` WHERE ( nkey='4' ) LIMIT 1   [ RunTime:0.000327s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017847s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000387s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000286s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000290s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001468s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000454s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2017-09-07T08:58:39+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/logout/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000604s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+
+[ 2017-09-07T08:58:39+08:00 ] 0.0.0.0 /webshixun/application.php/Trains/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000545s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005457s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000347s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000324s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000233s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001360s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000428s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2017-09-07T09:04:59+08:00 ] 0.0.0.0 /webshixun/application.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+NOTIC: [2048] Declaration of TrainsAction::_list() should be compatible with that of CommonAction::_list() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of TrainsAction::error() should be compatible with that of Action::error() F:\php\study\WWW\webshixun\Application\Lib\Action\TrainsAction.class.php 第 3 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006780s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000434s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000414s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000303s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001718s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000646s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000705s ]
+

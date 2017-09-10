@@ -1,0 +1,16 @@
+<include file="head" />
+	<body>
+		<div class="red"><center>我的惊喜<a href="javascript:history.go(-1)">返回</a></center></div>
+	<div class="surprise">
+	    <if condition="($ticketcount neq 0)">
+	    	<a href="__URL__/elecTicket"><div class="topic" style="background-image: url(__PUBLIC__/MkActivity/img/10.1.png);">获取电子门票{$ticketcount}张</div></a>
+	    </if>
+	    <if condition="($bookcount neq 0)">
+	    	<a href="__URL__/books"><div class="topic" style="background-image: url(__PUBLIC__/MkActivity/img/10.2.png);">获得图书{$bookcount}本 </div></a>
+	    </if>
+	    <if condition="($giftcount neq 0)">
+	    	<a href="__URL__/gift"><div class="topic" style="background-image: url(__PUBLIC__/MkActivity/img/10.3.png);">获得礼物{$giftcount}份</div></a>
+	    </if>
+	</div>
+	</body>
+</html>

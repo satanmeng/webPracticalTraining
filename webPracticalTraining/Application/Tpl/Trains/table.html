@@ -1,0 +1,64 @@
+﻿<include file="head" />
+<script type="text/javascript">
+          function back(nkey){
+            $.post("__URL__/tuipiao",{nkey:nkey},function(data){
+                    alert(data);
+                    document.location.reload();
+            });
+          }
+
+    </script>
+    <section class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="ui.html">个人信息</a></li>
+                            <li><a class="menu-top-active" href="table.html">个人订单</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">订单详情</h1>
+                    </div>
+                </div>
+                <volist id="vo" name="order">
+            <div class="row">
+            <div class="col-md-3">
+                
+            </div>
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                        </div>
+                        <div class="panel-body">
+                            <center>
+                                <div>
+                                    {$vo['tid']|getFieldById="trains"}&nbsp;&nbsp;&nbsp;{$vo['tid']|getFieldById="start"} -------> {$vo['tid']|getFieldById="end"}
+                                    <br>
+                                    {$vo['tid']|getFieldById="stime"}开
+                                    <br>
+                                    持票人：{$realname}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总张数：1
+                                    <br>
+                                    <a onclick="back({$vo['nkey']})" class="btn btn-danger btn-sm">退票</a>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </volist>
+
+        </div>
+    </div>
+<include file="footer" />

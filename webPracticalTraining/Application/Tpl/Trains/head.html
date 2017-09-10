@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>火车订票管理系统</title>
+    <link href="__PUBLIC__/Trains/css/bootstrap.css" rel="stylesheet" />
+    <link href="__PUBLIC__/Trains/css/font-awesome.css" rel="stylesheet" />
+    <link href="__PUBLIC__/Trains/css/style.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+          function info(){
+            $.post("__URL__/head",function(data){
+                data = eval("(" + data + ")");
+                if (data != null) {
+                    $("#username").html(data['username']);
+                    $("#detail").html(data['detail']);
+                    $("#resume").html(data['resume']);
+                } else {
+                    $("#username").html("无");
+                    $("#detail").html("无");
+                    $("#resume").html("无");
+                }
+            });
+          }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <strong>Email: </strong>info@yourdomain.com
+                    &nbsp;&nbsp;
+                    <strong>Support: </strong>12306
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="navbar navbar-inverse set-radius-zero">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+
+                    <img src="__PUBLIC__/Trains/img/logo.png" />
+                </a>
+
+            </div>
+
+            <div class="left-div">
+                <div class="user-settings-wrapper" >
+                    <ul class="nav">
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown"  aria-expanded="false">
+                                <span class="glyphicon glyphicon-user" style="font-size: 25px;"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-settings">
+                                <div class="media">
+                                    <a class="media-left" href="#">
+                                        <img src="<?php echo head(4) ?>" alt="" class="img-rounded" height="64px" width="64px"/>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading" id="username"><?php echo head(1) ?></h4>
+                                        <h5 id="detail"><?php echo head(2) ?></h5>
+
+                                    </div>
+                                </div>
+                                <hr />
+                                <h5><strong>个人简介 : </strong></h5>
+                                <?php echo head(3) ?>
+                                <hr />
+                                <a href="__URL__/ui/" class="btn btn-info btn-sm">全部信息</a>&nbsp; <a href="__URL__/logout/" class="btn btn-danger btn-sm">退出</a>
+
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,51 @@
+<script>
+  //检测文件类型
+    function checkExd(fileid) {
+        fileName = document.getElementById(fileid).value;
+        if (fileName.lastIndexOf(".") + 1 >= fileName.length) {
+            alert("文件类型不匹配");
+            return false;
+        }
+        var exd = fileName.substring(fileName.lastIndexOf(".") + 1).toUpperCase();
+        if (exd == "GIF" || exd == "JPG" || exd == "PNG" || exd == "BMP" || exd == "JPEG") {
+            return true;
+        } else {
+            alert("文件类型不匹配");
+            document.getElementById(fileid).value = "";
+            return false;
+        }
+    }
+</script>
+<div class="pageContent">
+
+    <form method="post" action="__URL__/update/navTabId/__MODULE__?callbackType=closeCurrent" class="pageForm required-validate" enctype="multipart/form-data" onsubmit="return iframeCallback(this, navTabAjaxDone)">
+        <input type="hidden" name="user_id" value="<?php echo $_SESSION[C('USER_AUTH_KEY')] ?>">
+        <input type="hidden" name="nkey" value="{$vo.nkey}">
+        <input type="hidden" name="ajax" value="1">
+        <div class="pageFormContent" layoutH="58">
+            <div class="unit">
+                <label>字典名称：</label>
+                <input name="Dict.id" value="{$vo.dtid}" type="hidden" >
+                <input name="Dict.title" value="{$vo.dtid||getFieldById="Dict"}"  type="text" readonly/>
+                <a class="btnLook" href="__URL__/lookup/modelname/Dict" lookupGroup="Dict">查找带回</a>
+            </div>
+            <div class="unit">
+                <label>图书封面：</label>
+                <input id="File1" type="file" class="" name="pic" onchange="checkExd('File1')" value=""/>
+            </div>
+             <if condition="($vo.pic neq '')">
+                <div class="unit">
+                    <label>预览：</label>
+                    <img width="100" src="{$vo.pic}"/>
+                </div>
+            </if>
+        </div>
+        <div class="formBar">
+            <ul>
+                <li><div class="buttonActive"><div class="buttonContent"><button type="submit">保存</button></div></div></li>
+                <li><div class="button"><div class="buttonContent"><button type="button" class="close">取消</button></div></div></li>
+            </ul>
+        </div>
+    </form>
+</div>
+

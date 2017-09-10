@@ -1,0 +1,71 @@
+<div class="pageContent">
+    <form method="post" action="__URL__/insert/navTabId/__MODULE__?callbackType=closeCurrent" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone)">
+        <div class="pageFormContent" layoutH="56">
+            <div class="unit">
+                <label>用户名：</label>
+                <input type="text" class="required alphanumeric" size="30" maxlength="20" name="account"/>
+            </div>
+            <div class="unit">
+                <label>昵称：</label>
+                <input type="text" class="" name="nickname">
+            </div>
+            <div class="unit">
+                <label>密码：</label>
+                <input type="text" name="password" size="30" maxlength="20" class="required alphanumeric"/>
+            </div>
+            <div class="unit">
+                <label>Email：</label>
+                <input type="text" name="email" size="30" maxlength="100" class="email"/>
+            </div>
+            <div class="unit">
+                <label>角色类型：</label>
+                <select id="role" name="role">
+                    <volist name="roles" id="ro">
+                        <option <eq name="ro.id" value="1">selected</eq> value="{$ro['id']}">{$ro['name']}</option>
+                    </volist>
+                </select>
+            </div>
+            <div class="unit">
+                <label>关联店铺：</label>
+                <select id="shop" disabled="disabled" name="shop_id">
+                    <option value="0">--请选择店铺--</option>
+                    <volist  name="shops" id="so">
+                        <option value="{$so['id']}">{$so['name']}</option>
+                    </volist>
+                </select>
+            </div>
+            <div class="unit">
+                <label>状态：</label>
+                <select name="status">
+                    <option value="1">启用</option>
+                    <option value="0">禁用</option>
+                </select>
+            </div>
+            <div class="unit">
+                <label>备注：</label>
+                <textarea name="remark" rows="3" cols="57"></textarea>
+            </div>
+
+        </div>
+        <div class="formBar">
+            <ul>
+                <li><div class="buttonActive"><div class="buttonContent"><button type="submit">提交</button></div></div></li>
+                <li><div class="button"><div class="buttonContent"><button type="button" class="close">取消</button></div></div></li>
+            </ul>
+        </div>
+    </form>
+    <script>
+        $(function () {
+            $("#role").change(function () {
+                if ($(this).attr("value") == 1) {
+                    $("#shop").attr("disabled", 'disabled');
+                } else {
+                    $("#shop").removeAttr("disabled");
+                }
+            });
+        });
+    </script>
+</div>
+
+
+

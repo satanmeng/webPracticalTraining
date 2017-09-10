@@ -1,0 +1,31 @@
+<include file="head" />
+	<body>
+		<div class="red"><center>{$notable['title']}推广<a href="__URL__/celebrityBooks">返回</a></center></div>
+	    <div class="recommend">
+	        <div class="frame">
+	        <img src="{$notable['pic']}" style="width: 4.25rem;height: 4.75rem;"/>
+	        <p class="name">{$notable['title']}</p>
+	        <p class="text1">{$notable['desc']}</p>
+	        </div>
+	        <center><div class="temporary"><video  style="height:100%;width: 100%;" controls="controls" poster="__URL__/MkActivity/img/17.1.png">
+            <source src="{$notable['video']}" type="video/mp4"/>
+            Your browser does not support HTML5 video.
+            </video></div></center>
+	        <div class="text2">
+	        	<p class="topic1">推荐图书</p>
+	        	<div class="tSmall1">{$notable['rembook']}</div>
+	        </div>
+	        <div class="text3">
+	        	<b>	<i><p class="topic1">推荐语</p>
+	        	<div class="tSmall1">{$notable['speak']}</div></i></b>
+	        </div><hr />
+	        <div class="null"></div><hr />
+	        <div><img src="__PUBLIC__/MkActivity/img/17.2.png"></div>
+	        <div class="divide1">
+	    	    <volist name="book" id='vo'>
+	    	    	<div class="glowworm"><img src="{$vo.pic}"><div class="lane">{$vo.title}</div><div class="price">￥{$vo.price}元</div></div>
+	    	    </volist>
+	        </div>
+	    </div>
+	</body>
+</html>

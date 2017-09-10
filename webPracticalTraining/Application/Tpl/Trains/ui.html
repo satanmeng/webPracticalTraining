@@ -1,0 +1,110 @@
+<include file="head" />
+    <section class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a href="index.html">首页</a></li>
+                            <li><a class="menu-top-active" href="ui.html">个人信息</a></li>
+                            <li><a href="table.html">个人订单</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- MENU SECTION END-->
+    <div class="content-wrapper">
+        <div class="container">
+             <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">个 人 信 息</h1>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="col-md-3">
+                    
+                </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                        <div class="panel-heading">
+                            个人信息
+                        </div>
+                       
+                        <div class="panel-body">
+                         <div class="media">
+                                    <a class="media-left" href="#">
+                                        <img src="{$info['pic']}" alt="" class="img-rounded" height="64px" width="64px" />
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">{$info['username']}</h4>
+                                        <h5>{$info['detail']}</h5>
+
+                                    </div>
+                                </div>
+                                <hr />
+                                <h5><strong>个人简介 : </strong></h5>
+                                {$info['resume']}
+                                <hr />
+                                <h5><strong>电话号码 : </strong></h5>
+                                {$info['tel']}
+                                <hr />
+                                <h5><strong>身份证号 : </strong></h5>
+                                {$info['oid']}
+                                <hr />
+                                <h5><strong>真实姓名 : </strong></h5>
+                                {$info['realname']}
+                                <hr />
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-edit "></i> Edit</button>&nbsp;&nbsp;
+                                <a class="btn btn-primary" href="blank.html"><i class="fa fa-user "></i> 更换头像</a>
+
+                                <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">个人信息修改</h4>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="__URL__/changeinfo/">
+            <h5><strong>真实姓名 : </strong></h5>
+                                <input type="text" name="realname" value="{$info['realname']}">
+                                <hr />
+            <h5><strong>职称 : </strong></h5>
+                                <input type="text" name="detail" value="{$info['detail']}">
+                                <hr />
+                                <h5><strong>个人简介 : </strong></h5>
+                                <input type="text" name="resume" value="{$info['resume']}">
+                                <hr />
+                                <h5><strong>电话号码 : </strong></h5>
+                                <input type="text" name="tel" value="{$info['tel']}">
+                                <hr />
+                                <h5><strong>身份证号 : </strong></h5>
+                                <input type="text" name="oid" value="{$info['oid']}">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <input type="submit" name="" class="btn btn-primary" value="保存">
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+                              </div>
+</div>
+                            </div>
+                            <div class="col-md-3">
+                    
+                            </div>
+                            </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<include file="footer" />

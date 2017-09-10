@@ -1,0 +1,165 @@
+<include file="head" />
+	<body >
+	<div class="red"><center>书市地图<a href="__URL__/generalize">返回</a></center></div>
+	<div class="map"> 
+	    <div class="shape">
+	    	<img class="picture" src="__PUBLIC__/MkActivity/img/61.png"   usemap="#Map" />
+	    	<map name="Map" id="Map">
+	    	<area class="area" shape="poly" coords="275,49,170,50,130,76,140,131,165,181,195,224,221,249,246,265,277,277,274,289,229,274,193,246,170,218,145,179,126,130,123,105,120,89,117,80,125,65,161,38,223,35,256,35,278,35" />
+	    	<area class="area" shape="poly" coords="276,315,274,337,275,368,275,392,279,410,283,420,267,421,264,425,267,431,297,431,300,427,293,406,288,391,289,364,288,347,288,332,288,320,282,314"/>
+	    	<area class="area" shape="poly" coords="393,421,393,284,414,284,421,278,425,278,432,280,434,285,450,285,451,399,408,398,409,418" />
+            <area class="area" shape="poly" coords="300,338,300,400,375,401,375,339" />
+            <area class="area" shape="poly" coords="305,415,304,432,316,433,332,446,326,459,324,470,324,479,330,488,336,494,331,500,331,508,317,511,317,526,334,521,341,525,354,533,365,535,377,532,387,525,394,520,429,535,435,526,401,513,397,492,405,478,406,465,403,454,394,443,395,432,391,419,384,415" />
+            <area class="area" shape="poly" coords="415,415,414,427,436,427,436,416"/> 
+	    	</map>
+	    </div>
+	    <div class="lineone">
+	    	<div class="purple"><p>A区</p><img src="__PUBLIC__/MkActivity/img/mappurple.png"><p>精品畅销书区</p></div>
+	    	<div class="pink"><p>B区</p><img src="__PUBLIC__/MkActivity/img/mappink.png"><p>古旧图书展区</p></div>
+	    </div>
+	    <div class="linetwo">
+	    	<div class="blue"><p>C区</p><img src="__PUBLIC__/MkActivity/img/mapblue.png"><p>青少年互动体验区</p></div>
+	    	<div class="brown"><p>D区</p><img src="__PUBLIC__/MkActivity/img/mapbrown.png"><p>文化艺术展示区</p></div>
+	    </div><div class="linet2hree">
+	    	<div class="orang"><p>E区</p><img src="__PUBLIC__/MkActivity/img/maporang.png"><p>优秀图书展区</p></div>
+	    </div>
+	</div>
+	<div class="list">
+		<p>中国少年儿童出版社</p><center><hr></center>
+			<p>中信出版社</p><center><hr></center>
+				<p>金盾出版社</p><center><hr></center>
+					<p>清华大学出版社</p><center><hr></center>
+						<p>中国裴蕾出版社</p><center><hr></center>
+							<p>农业大学出版社</p><center><hr></center>
+								<p>中信出版社</p><center><hr></center>
+									<p>北京大学出版社</p><center><hr></center>
+										<p>中信出版社</p><center><hr></center>
+											<p>中信出版社</p><center><hr></center>
+												<p>中信出版社</p><center><hr></center>
+													<p>中信出版社</p><center><hr></center>
+	    <center><a><div class="return">返回</div></a></center>
+	</div>
+	<script>    //E区    
+	            var o = document.getElementsByClassName("picture")[0];
+	            var h = o.offsetHeight; //高度
+                var w = o.offsetWidth; //宽度
+                var area=document.getElementsByClassName("area")[0];
+         		var s=area.coords;
+         		var i;
+         		var ss =s.split(",");
+         		var i;
+         		for (i=0;i<ss.length;i++) {
+         			if(i%2==0){
+         				ss[i]=ss[i]/640*w;
+         			}else{
+         				ss[i]=ss[i]/662*h;
+         			}
+         		}
+         		area.coords=ss;
+    </script>
+    <script>    //D区    
+	            var o = document.getElementsByClassName("picture")[0];
+	            var h = o.offsetHeight; //高度
+                var w = o.offsetWidth; //宽度
+                var area=document.getElementsByClassName("area")[1];
+         		var s=area.coords;
+         		var i;
+         		var ss =s.split(",");
+         		var i;
+         		for (i=0;i<ss.length;i++) {
+         			if(i%2==0){
+         				ss[i]=ss[i]/640*w;
+         			}else{
+         				ss[i]=ss[i]/662*h;
+         			}
+         		}
+         		area.coords=ss;
+    </script>
+    <script>    //C区    
+	            var o = document.getElementsByClassName("picture")[0];
+	            var h = o.offsetHeight; //高度
+                var w = o.offsetWidth; //宽度
+                var area=document.getElementsByClassName("area")[2];
+         		var s=area.coords;
+         		var i;
+         		var ss =s.split(",");
+         		var i;
+         		for (i=0;i<ss.length;i++) {
+         			if(i%2==0){
+         				ss[i]=ss[i]/640*w;
+         			}else{
+         				ss[i]=ss[i]/662*h;
+         			}
+         		}
+         		area.coords=ss;
+    </script>
+    <script>    //B区    
+	            var o = document.getElementsByClassName("picture")[0];
+	            var h = o.offsetHeight; //高度
+                var w = o.offsetWidth; //宽度
+                var area=document.getElementsByClassName("area")[3];
+         		var s=area.coords;
+         		var i;
+         		var ss =s.split(",");
+         		var i;
+         		for (i=0;i<ss.length;i++) {
+         			if(i%2==0){
+         				ss[i]=ss[i]/640*w;
+         			}else{
+         				ss[i]=ss[i]/662*h;
+         			}
+         		}
+         		area.coords=ss;
+    </script>
+    <script>    //A区    
+	            var o = document.getElementsByClassName("picture")[0];
+	            var h = o.offsetHeight; //高度
+                var w = o.offsetWidth; //宽度
+                var area=document.getElementsByClassName("area")[4];
+         		var s=area.coords;
+         		var i;
+         		var ss =s.split(",");
+         		var i;
+         		for (i=0;i<ss.length;i++) {
+         			if(i%2==0){
+         				ss[i]=ss[i]/640*w;
+         			}else{
+         				ss[i]=ss[i]/662*h;
+         			}
+         		}
+         		area.coords=ss;
+    </script>
+     <script>    //A区    
+	            var o = document.getElementsByClassName("picture")[0];
+	            var h = o.offsetHeight; //高度
+                var w = o.offsetWidth; //宽度
+                var area=document.getElementsByClassName("area")[5];
+         		var s=area.coords;
+         		var i;
+         		var ss =s.split(",");
+         		var i;
+         		for (i=0;i<ss.length;i++) {
+         			if(i%2==0){
+         				ss[i]=ss[i]/640*w;
+         			}else{
+         				ss[i]=ss[i]/662*h;
+         			}
+         		}
+         		area.coords=ss;
+    </script>
+    <script>
+            for (var i=0;i<6;i++) {
+            	var list=document.getElementsByClassName("area")[i];
+                list.onclick=function(){
+            	document.getElementsByClassName("list")[0].style.display="block";
+               }
+               var xl=document.getElementsByClassName("return")[0];
+               xl.onclick=function(){
+               document.getElementsByClassName("list")[0].style.display="none";
+               }
+            }
+    </script>
+    
+	</body>
+	
+</html>

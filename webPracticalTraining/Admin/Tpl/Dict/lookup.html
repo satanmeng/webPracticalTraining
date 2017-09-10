@@ -1,0 +1,64 @@
+﻿
+<form id="pagerForm" action="__URL__/lookup" method="post">
+	<input type="hidden" name="pageNum" value="1"/>
+	<input type="hidden" name="modelname" value="{$_REQUEST.modelname}"/>
+</form>
+
+<div class="page">
+	<div class="pageHeader">
+		<form onsubmit="return dwzSearch(this, 'dialog');"action="__URL__/lookup" method="post">
+		<input type="hidden" name="pageNum" value="1"/>
+		<input type="hidden" name="modelname" value="{$_REQUEST.modelname}"/>
+		<div class="searchBar">
+			<ul class="searchContent">
+				<li>
+					<label>字典名称：</label>
+					<input name="title" value="">
+				</li>
+				<li>
+					<label>关键字：</label>
+					<input name="keyword" value="">
+				</li>
+			</ul>
+			<div class="subBar">
+				<ul>
+					<li><div class="buttonActive"><div class="buttonContent"><button type="submit">查询</button></div></div></li>
+				</ul>
+			</div>
+		</div>
+		</form>
+	</div>
+	
+	<div class="pageContent">
+		<table class="table" width="100%" layoutH="138">
+			<thead>
+			<tr>
+				<th width="60">编号</th>
+				<th width="100">字典名称</th>
+				<th width="120">关键字</th>
+                <th width="120">查找带回</th>
+			</tr>
+			</thead>
+			<tbody>
+			<volist id="vo" name="list">
+				<tr>
+					<td>{$vo['id']}</td>
+					<td>{$vo['title']}</td>
+					<td>{$vo['keyword']}</td>
+                    <td><a class="btnSelect" href="javascript:$.bringBack({id:'<?php echo $vo['id'] ?>',title:'<?php echo $vo['title'] ?>'})" title="查找带回">选择</a></td>
+				</tr>
+			</volist>
+			</tbody>
+		</table>
+
+		<div class="panelBar">
+			<div class="pages">
+				<span>共{$totalCount}条</span>
+			</div>
+			<div class="pagination" targetType="dialog" totalCount="{$totalCount}" numPerPage="{$numPerPage}" pageNumShown="10" currentPage="{$currentPage}"></div>
+		</div>
+
+	</div>
+	
+</div>
+

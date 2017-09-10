@@ -1,0 +1,62 @@
+﻿<include file="head"/>
+<script>
+  //检测文件类型
+    function checkExd(fileid) {
+        fileName = document.getElementById(fileid).value;
+        if (fileName.lastIndexOf(".") + 1 >= fileName.length) {
+            alert("文件类型不匹配");
+            return false;
+        }
+        var exd = fileName.substring(fileName.lastIndexOf(".") + 1).toUpperCase();
+        if (exd == "GIF" || exd == "JPG" || exd == "PNG" || exd == "BMP" || exd == "JPEG") {
+            return true;
+        } else {
+            alert("文件类型不匹配");
+            document.getElementById(fileid).value = "";
+            return false;
+        }
+    }
+</script>
+    <section class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a href="index.html">首页</a></li>
+                            <li><a class="menu-top-active">个人信息</a></li>
+                            <li><a href="table.html">个人订单</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- MENU SECTION END-->
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="page-head-line">更换头像</h4>
+
+                </div>
+
+            </div>
+            <form method="post" action="__URL__/headpic/" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="alert alert-warning">
+                      <label for="File">上传头像</label>
+    <input type="file" id="File" name="pic" onchange="checkExd('File1')" />
+    <p class="help-block">支持gif,jpg,png,jpeg格式</p>
+    <input type="submit" value="上传">
+                    </div>
+                    </form>
+                    <a class="btn btn-danger btn-big" href="ui.html"><i class="fa fa-user "></i> 返回</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+<include file="footer"/>

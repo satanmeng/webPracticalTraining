@@ -1,0 +1,43 @@
+<include file="head" />
+
+<body>
+    <div class="red">
+        <center>互动抽奖<a href="__URL__/generalize">返回</a></center>
+    </div>
+    <div class="interactSweep">
+        <div class="topic">请您完成此份问卷获得抽奖资格</div>
+        <center>
+            <hr />
+        </center>
+        <form action="__URL__/page1" method="post">
+        <volist name="subject" id='vo'>
+            <div class="quesAnswer">
+            <div class="blank">Q：{$vo.title}</div>
+                <if condition="($vo['asA-A'] neq '')">
+                	<input type="radio" name="fkid{$vo.id}" value="1" style="width: 0.65rem;height: 0.65rem;">{$vo.asA-A}
+                </if>
+                <if condition="($vo['asB-B'] neq '')">
+                	<input type="radio" name="fkid{$vo.id}" value="2" style="width: 0.65rem;height: 0.65rem;">{$vo.asB-B}
+                </if>
+                <if condition="($vo['asC-C'] neq '')">
+                	<input type="radio" name="fkid{$vo.id}" value="3" style="width: 0.65rem;height: 0.65rem;">{$vo.asC-C}
+                </if>
+                <if condition="($vo['asD-D'] neq '')">
+                	<input type="radio" name="fkid{$vo.id}" value="4" style="width: 0.65rem;height: 0.65rem;">{$vo.asD-D}
+                </if>
+                <if condition="($vo['asE-E'] neq '')">
+                	<input type="radio" name="fkid{$vo.id}" value="5" style="width: 0.65rem;height: 0.65rem;">{$vo.asE-E}
+                </if>
+                <if condition="($vo['asF-F'] neq '')">
+                	<input type="radio" name="fkid{$vo.id}" value="6" style="width: 0.65rem;height: 0.65rem;">{$vo.asF-F}
+                </if>
+            </div>
+           </volist>
+            <center>
+                <input type="submit" value="提交" class="submit">
+            </center>
+        </form>
+    </div>
+</body>
+
+</html>

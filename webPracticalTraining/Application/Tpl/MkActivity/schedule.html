@@ -1,0 +1,32 @@
+<include file="head" />
+<script type="text/javascript">
+          function vote(id){
+          	$.post("__URL__/chvote",{id:id},function(data){
+          			alert(data);
+          	});
+          }
+
+          function collect(id){
+          	$.post("__URL__/chcollect",{id:id},function(data){
+          			alert(data);
+          	});
+          }
+
+    </script>
+	<body>
+		<div class="red"><center>日程安排<a href="__URL__/calendar">返回</a></center></div>
+	<div class="schedule">
+	<volist name="activity" id='vo'>
+		<div class="hundred">{$vo.title}</div>
+	    <a onclick="vote({$vo.id})"><div class="votered1">投票</div></a>
+	    <a onclick="collect({$vo.id})"><div class="collectorange1">收藏</div></a>
+	    <div class="textone">
+	    	时间：{$vo.pbegin}－{$vo.pend}<br />
+                      地点：北京朝阳公园入口处<br />
+                      嘉宾：{$vo.guest}<br />
+                      活动介绍：<a class="greytext">{$vo.desc}</a> 
+	    </div>
+	</volist>
+	</div>
+	</body>
+</html>

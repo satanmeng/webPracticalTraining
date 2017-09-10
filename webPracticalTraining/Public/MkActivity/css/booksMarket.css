@@ -1,0 +1,1027 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	height: auto;
+	margin: 0px;
+}
+
+.red{
+	width: 16rem;
+	height: 2rem;
+	background-color: #db0000;
+	color: white;
+	line-height: 2rem;
+	font-size: 0.8rem;
+	z-index: 1;
+}
+.red a{
+	font-size: 0.6rem;
+	position: absolute;
+	right: 0.8rem;
+}
+
+.generalize{
+	width: 100%;
+	height: auto;
+	background-color: #f7f7f7;
+}
+.generalize .72hs{
+	width: 16rem;
+	height: 7.5rem;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+.generalize .blocks{
+	width: 16rem;
+	height: 8.2rem;
+	margin-top: 0.575rem;
+}
+.generalize .smallBlock{
+	margin-left: 0.25rem;
+	margin-bottom: 0.2rem;
+	float: left;
+	width: 5rem;
+	height: 4rem;
+}
+.generalize .smallBlocks{
+	margin-left: 0.25rem;
+	float: left;
+	width: 5rem;
+	height: 4rem;
+}
+.generalize .scam{
+	width: 16rem;
+	height: 7rem;
+}
+.generalize .scamTicketssmall{
+	width: 3.75rem;
+	height: 3.75rem;
+	float: left;
+	position: relative;
+	left: 1.9rem;
+	top: 1.925rem;
+}
+.generalize .scamBookssmall{
+	width: 2.75rem;
+	height: 2.75rem;
+	float: left;
+	position: relative;
+	left: 6.6rem;
+	top: 2.425rem;
+}
+.generalize .my{
+	width: 16rem;
+	height: 1.95rem;
+}
+.generalize .votesmall{
+	text-align: center;
+	line-height: 1.95rem;
+	width: 7.975rem;
+	height:1.95rem ;
+	float: left;
+	background-color: white;
+	border-right: 0.05rem solid #F7F7F7;
+}
+.generalize .collectsmall{
+	text-align: center;
+	line-height: 1.95rem;
+	width: 7.975rem;
+	height:1.95rem ;
+	float: left;
+	background-color: white;
+}
+
+.collect{
+	width: 100%;
+	height: 23.175rem;
+	background-color: #f7f7f7;
+}
+
+.collect .topic{
+	height: 2rem;
+	width: 16rem;
+	line-height: 2rem;
+	text-indent: 0.3rem;
+	font-size: 0.65rem;
+	color: #666666;
+	background-image: url(../img/21.png);
+	background-size: 16rem 2rem;
+	background-repeat: no-repeat;
+	margin-bottom: 0.5rem;
+}
+
+.collect a{
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+a{
+	text-decoration:none ;
+}
+a:visited{
+	text-decoration:none ;
+}
+
+.red a:visited{
+	color: white;
+}
+
+.booksInformation .text a{      /*jia*/
+	color: crimson;
+	margin-left: 0.66rem;
+}
+.booksInformation .text a:visited{
+	color: crimson;
+}
+.booksInformation .topic .a{
+	color: black;
+}
+.booksInformation .topic .a:visited{
+	color: black;
+}
+
+
+.scamTicketstop{
+	width: 16rem;
+	height: 13.75rem;
+	background-color: white;
+}
+.scamTickets .IDcard{
+	width: 12.4rem;
+	height: 1.5rem;
+	position: relative;
+	left: 2.05rem;
+    top: 1.7rem;
+    color: #333333;
+    font-size: 0.65rem;
+}
+.scamTickets .mobile{
+	width: 12.4rem;
+	height: 1.5rem;
+	position: relative;
+	left: 2.05rem;
+    top: 1.85rem;
+    color: #333333;
+    font-size: 0.65rem;
+}
+.scamTickets .verify{
+	width: 8.6rem;
+	height: 1.5rem;
+	position: relative;
+	left: 2.05rem;
+    top: 1.875rem;
+    color: #333333;
+    font-size: 0.65rem;
+}
+.scamTickets input{
+	height:1.5rem;
+	background-color: #f8f8f8;
+	font-size: 0.65rem;
+	color: #c8c8c8;
+	border:0.1px solid #c8c8c8;
+}
+.scamTickets .IDcard{
+	margin-bottom: 0.35rem;
+}
+.scamTickets .mobile{
+	margin-bottom: 0.35rem;
+}
+.scamTickets .code{
+	width: 3.475rem;
+	height: 1.525rem;
+	background-color: #fb6552;
+	line-height: 1.525rem;
+	font-size: 0.6rem;
+	position: absolute;
+	left: 10.7rem;
+	top: 7.556rem;
+	color: white;
+	text-align: center;
+}
+.scamTickets .agree{
+	position: absolute;
+	left: 5.625rem;
+	top: 9.5rem;
+}
+.scamTickets .click{
+	width: 0.85rem;
+	height: 0.85rem;
+	float: left;
+}
+.scamTickets .rule{
+	font-size: 0.6rem;
+	float: left;
+	text-indent: 0.375rem;
+	line-height: 1.2rem;
+}
+.scamTickets .orang{
+	color: #ffab5d;
+	font-size: 0.6rem;
+	float: left;
+	line-height: 1.2rem;
+}
+.scamTickets .buttom{
+	width:14.45rem ;
+	height: 1.525rem;
+	position: absolute;
+	left: 0.79rem;
+	top: 12.25rem;
+	line-height: 1.525rem;
+	background-color: #db0000;
+	color: white;
+	border-radius:0.2rem;
+	font-size: 0.75rem;
+	text-align: center;
+}
+.scamTickets .scamTicketsbuttom{
+	width: 16rem;
+	height: 9.45rem;
+	background-color: #f7f7f7;
+}
+
+.scamBooks{
+	width: 16rem;
+	height: 23rem;
+	background-color:#f7f7f7;
+}
+.scamBooks .topic{
+	text-align: center;
+	font-size: 0.8rem;
+	line-height: 2.35rem;
+}
+.scamBooks hr{
+	width: 90.3125%;
+}
+.scamBooks .text{
+	width:14.45rem ;
+	font-size: 0.6rem;
+	margin-left: 0.79rem;
+	text-indent: 1.125rem;
+	margin-top: 1rem;
+}
+.scamBooks .buttom{
+	width:14.45rem ;
+	height: 1.525rem;
+	position: absolute;
+	left: 0.79rem;
+	top: 19.7rem;
+	line-height: 1.525rem;
+	background-color: #db0000;
+	color: white;
+	border-radius:0.2rem;
+	font-size: 0.75rem;
+	text-align: center;
+	letter-spacing:0.95rem;
+}
+
+.exhibitor {
+	width: 16rem;
+	height: 32.85rem;
+	background-image: url(../img/71.png);
+	background-size: 16rem 32.85rem;
+	background-repeat: no-repeat;
+}
+.exhibitor .text{
+	width: 14.475rem;
+	position: absolute;
+	top: 3.875rem;
+	left: 0.75rem;
+	text-indent: 1.075rem;
+	font-size: 0.6rem;
+	line-height: 0.96rem;
+	color: #666666;
+}
+.exhibitor .press{
+	position: absolute;
+	top: 19.075rem;
+	left: 0.75rem;
+	font-size: 0.65rem;
+	line-height: 1.3rem;
+	color: #333333;
+}
+.exhibitor .divide1{
+	width: 16rem;
+	height: 5.9rem;
+	position: absolute;
+	top: 20.35rem;
+	padding-left: 0.4rem;
+	padding-top: 0.75rem;
+}
+.exhibitor .divide2{
+	width: 16rem;
+	height: 5.9rem;
+	position: absolute;
+	top: 26.275rem;
+	padding-left: 0.4rem;
+	padding-top: 0.75rem;
+}
+.exhibitor .glowworm{
+	width: 2.75rem;
+	height: 3.5rem;
+	float: left;
+	margin-left: 0.15rem;
+	margin-right: 0.15rem;
+}
+.exhibitor .lane{
+	font-size: 0.4rem;
+	text-align: center;
+	line-height: 0.48rem;
+}
+.exhibitor .price{
+	font-size: 0.4rem;
+	text-align: center;
+	color: #e33939;
+	line-height: 0.56rem;
+}
+
+.calendar {
+	width: 16rem;
+	height:23.2rem;
+	background-image: url(../img/81.png);
+	background-size: 16rem 23.2rem;
+	background-repeat: no-repeat;
+}
+.calendar .ofour{
+	width: 2.2rem;
+	height: 1.75rem;
+	position: absolute;
+	top: 11.85rem;
+	left: 11.325rem;
+}
+.calendar .ofive{
+	width: 2.2rem;
+	height: 1.75rem;
+	position: absolute;
+	top: 11.85rem;
+	left: 13.575rem;
+}
+.calendar .osix{
+	width: 2.2rem;
+	height: 1.75rem;
+	position: absolute;
+	top: 13.6rem;
+	left: 0.25rem;
+}
+.calendar .oseven{
+	width: 2.2rem;
+	height: 1.75rem;
+	position: absolute;
+	top: 13.6rem;
+	left: 2.45rem;
+}
+.calendar .oeight{
+	width: 2.2rem;
+	height: 1.75rem;
+	position: absolute;
+	top: 13.6rem;
+	left: 4.65rem;
+}
+.calendar .onine{
+	width: 2.2rem;
+	height: 1.75rem;
+	position: absolute;
+	top: 13.6rem;
+	left: 6.85rem;
+}
+.calendar .tzero{
+	width: 2.2rem;
+	height: 1.75rem;
+	position: absolute;
+	top: 13.6rem;
+	left: 9.05rem;
+}
+.calendar .tone{
+	width: 2.2rem;
+	height: 1.75rem;
+	position: absolute;
+	top: 13.6rem;
+	left: 11.325rem;
+}
+.calendar .ttwo{
+	width: 2.2rem;
+	height: 1.75rem;
+	position: absolute;
+	top: 13.6rem;
+	left: 13.575rem;
+}
+.calendar .tthree{
+	width: 2.2rem;
+	height: 1.75rem;
+	position: absolute;
+	top: 15.35rem;
+	left: 0.25rem;
+}
+.calendar .tfour{
+	width: 2.2rem;
+	height: 1.75rem;
+	position: absolute;
+	top: 15.35rem;
+	left: 2.45rem;
+}
+.schedule{
+	width: 16rem;
+	height: 35.825rem;
+	background-image: url(../img/91.png);
+	background-size: 16rem 35.825rem;
+	background-repeat: no-repeat;
+}
+.schedule .hundred{
+	text-align: center;
+	font-size: 0.7rem;
+	line-height: 1.8rem;
+}
+.schedule .votered1{
+	width: 4.5rem;
+	height: 1.275rem;
+	color: white;
+	font-size: 0.7rem;
+	line-height: 1.275rem;
+	text-align: center;
+	background-color: #e3393a;
+	position: absolute;
+	left: 2.375rem;
+	top: 11.8rem;
+	border-radius:1rem;
+}
+.schedule .collectorange1{
+	width: 4.5rem;
+	height: 1.275rem;
+	color: white;
+	font-size: 0.7rem;
+	line-height: 1.275rem;
+	text-align: center;
+	background-color: #ffa64d;
+	position: absolute;
+	left: 9.125rem;
+	top: 11.8rem;
+	border-radius:1rem;
+}
+.schedule .textone{
+	width: 14.45rem;
+	height: 5rem;
+	font-size: 0.55rem;
+	color: #333333;
+	position: absolute;
+	top: 13.685rem;
+	left: 0.75rem;
+	line-height: 0.88rem;
+}
+.schedule .greytext{
+	color: #999999;
+}
+.schedule .second{
+	text-align: center;
+	font-size: 0.7rem;
+	line-height: 1.8rem;
+	position: absolute;
+	top: 20.12rem;
+	left: 4.8rem;
+}
+.schedule .votered2{
+	width: 4.5rem;
+	height: 1.275rem;
+	color: white;
+	font-size: 0.7rem;
+	line-height: 1.275rem;
+	text-align: center;
+	background-color: #e3393a;
+	position: absolute;
+	left: 2.375rem;
+	top: 29.7rem;
+	border-radius:1rem;
+}
+.schedule .collectorange2{
+	width: 4.5rem;
+	height: 1.275rem;
+	color: white;
+	font-size: 0.7rem;
+	line-height: 1.275rem;
+	text-align: center;
+	background-color: #ffa64d;
+	position: absolute;
+	left: 9.125rem;
+	top: 29.7rem;
+	border-radius:1rem;
+}
+.schedule .texttwo{
+	width: 14.45rem;
+	height: 5rem;
+	font-size: 0.55rem;
+	color: #333333;
+	position: absolute;
+	top: 31.725rem;
+	left: 0.75rem;
+	line-height: 0.88rem;
+}
+
+.surprise{
+	width: 100%;
+	height: 23.175rem;
+	background-color: #f7f7f7;
+}
+.surprise .topic{
+	height: 2rem;
+	width: 16rem;
+	line-height: 2rem;
+	text-indent: 3rem;
+	font-size: 0.65rem;
+	color: #666666;
+	background-color: #ffffff;
+	background-size: 16rem 2rem;
+	background-repeat: no-repeat;
+}
+
+.elecTicket .topic{
+	text-align: center;
+	font-size: 0.8rem;
+	line-height: 2.35rem;
+}
+.elecTicket hr{
+	width: 90.3125%;
+}
+.elecTicket .text{
+	width:14.46rem ;
+	font-size: 0.6rem;
+	margin-left: 0.8rem;
+	text-indent: 1.075rem;
+	line-height: 0.96rem;
+	margin-top: 1rem;
+	display: inline-block;
+	height: 2em;
+}
+.elecTicket .qrcode{
+	width: 6rem;
+	height: 13.75rem;
+	margin-top: 1.075rem;
+	z-index: 1;
+}
+.elecTicket .proof{
+	z-index: 2;
+	font-size: 0.65rem;
+	margin-top: -7.475rem;
+}
+
+.interactSweep  .topic{
+	text-align: center;
+	font-size: 0.8rem;
+	line-height: 2.35rem;
+}
+.interactSweep hr{
+	width: 90.3125%;
+}
+.interactSweep .quesAnswer{
+	font-size: 0.65rem;
+	color: #666666;
+	margin-top: 0.7rem;
+	margin-bottom: 1.4rem;
+	text-indent: -1.25rem;
+}
+.interactSweep .blank{
+	text-indent: 1.25rem;
+	margin-bottom: 0.55rem;
+}
+.interactSweep input{
+	margin-left: 2.5rem;
+	margin-right: 0.3rem;
+}
+
+.interactSweep .submit{
+	width:14.45rem ;
+	height: 1.525rem;
+	margin-top: 2.525rem;
+	line-height: 1.525rem;
+	background-color: #db0000;
+	color: white;
+	border-radius:0.2rem;
+	font-size: 0.75rem;
+	text-align: center;
+	letter-spacing:0.95rem;
+	margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+
+.page1{
+	width: 16rem;
+	height: 23.2rem;
+	background-image: url(../img/15.1.png);
+	background-size: 16rem 23.2rem;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+.page1 .begin{
+	width: 8.75rem;
+	height: 1.925rem;
+	position: absolute;
+	top: 19.9rem;
+	left: 3.55rem;
+}
+.grey{
+	width: 16rem;
+	height: 25.225rem;
+	display: none;
+	z-index: 2;
+	background-color: #333333;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.congratulate{
+	width: 12.5rem;
+	height: 6.25rem;
+	z-index: 3;
+	position: absolute;
+	top: 7.925rem;
+	left: 1.75rem;
+	background-color: white;
+	font-size: 0.65rem;
+	line-height: 1.04rem;
+    padding-top: 0.53rem;
+    color: #333333;
+    display: none;
+}
+.congratulate p{
+	display: inline-block;
+    margin-left: 0.725rem;
+}
+.congratulate a{
+	display: inline-block;
+	width: 4rem;
+	height: 1.25rem;
+	background-color: #ffa64d;
+	color: white;
+	font-size: 0.6rem;
+	line-height: 1.25rem;
+	text-align: center;
+	border-radius: 0.25rem;
+	margin-top: 0.75rem;
+}
+.sorry{
+	width: 12.5rem;
+	height: 6.25rem;
+	z-index: 3;
+	position: absolute;
+	top: 7.925rem;
+	left: 1.75rem;
+	background-color: white;
+	font-size: 0.65rem;
+	line-height: 1.04rem;
+    padding-top: 1.45rem;
+    color: #333333;
+    display: none;
+}
+.sorry p{
+	display: inline-block;
+    margin-left: 0.725rem;
+}
+.sorry a{
+	display: inline-block;
+	width: 4rem;
+	height: 1.25rem;
+	background-color: #ffa64d;
+	color: white;
+	font-size: 0.6rem;
+	line-height: 1.25rem;
+	text-align: center;
+	border-radius: 0.25rem;
+	margin-top: 1.1rem;
+}
+
+.celebrityBooks{
+	width: 16rem;
+	height: 25.225rem;
+	background-color: #f7f7f7;
+}
+.celebrityBooks .frame{
+	width: 16rem;
+	height: 5.8rem;
+	padding-top: 0.475rem;
+	padding-left: 0.525rem;
+	background-color: white;
+	border-bottom: 0.034rem solid #C8C8C8;
+	border-top: 0.034rem solid #C8C8C8;
+	margin-bottom: 0.25rem;
+}
+.celebrityBooks img{
+	display: block;
+	float: left;
+}
+.celebrityBooks .name{
+	float: left;
+	font-size: 0.65rem;
+	margin-left: 0.375rem;
+	margin-bottom: 0.385rem;
+}
+.celebrityBooks .text{
+	width: 10.5rem;
+	float: left;
+	font-size: 0.55rem;
+	margin-left: 0.375rem;
+	line-height: 0.88rem;
+}
+
+.recommend{
+	width: 16rem;
+	height: auto;
+}
+.recommend .temporary{
+	width: 15rem;
+	height: 8.75rem;
+}
+.recommend .frame{
+	width: 16rem;
+	height: 5.675rem;
+	padding-top: 0.475rem;
+	padding-left: 0.525rem;
+}
+.recommend img{
+	display: block;
+	float: left;
+}
+.recommend .name{
+	float: left;
+	font-size: 0.65rem;
+	margin-left: 0.375rem;
+	margin-bottom: 0.385rem;
+}
+.recommend .text1{
+	width: 10.5rem;
+	float: left;
+	font-size: 0.55rem;
+	margin-left: 0.375rem;
+	line-height: 0.88rem;
+}
+.recommend .text2{
+	width: 15rem;
+	height: 4.65rem;
+	margin-left: 0.5rem;
+	padding-top: 0.45rem;
+	border-bottom: 0.03rem solid #C8C8C8;
+}
+.recommend .topic1{
+	font-size: 0.65rem;
+	color: #333333;
+	margin-bottom: 0.575rem;
+}
+.recommend .tSmall1{
+	font-size: 0.55rem;
+	line-height: 0.88rem;
+}
+.recommend .text3{
+	width: 15rem;
+	height: 4.25rem;
+	margin-left: 0.5rem;
+	padding-top: 0.45rem;
+}
+.recommend .null{
+	width: 16rem;
+	height: 0.325rem;
+	background-color: #F7F7F7;
+}
+.recommend .divide1{
+	width: 16rem;
+	height: 5.4rem;
+	position: absolute;
+	top: 28.3rem;
+	padding-left: 0.4rem;
+	padding-top: 0.75rem;
+	border-bottom: 0.03rem solid #C8C8C8;
+}
+.recommend .divide2{
+	width: 16rem;
+	height: 5.9rem;
+	position: absolute;
+	top: 34.2rem;
+	padding-left: 0.4rem;
+	padding-top: 0.75rem;
+}
+.recommend .glowworm{
+	width: 2.75rem;
+	height: 3.5rem;
+	float: left;
+	margin-left: 0.15rem;
+	margin-right: 0.15rem;
+}
+.recommend .lane{
+	font-size: 0.4rem;
+	text-align: center;
+	line-height: 0.48rem;
+}
+.recommend .price{
+	font-size: 0.4rem;
+	text-align: center;
+	color: #e33939;
+	line-height: 0.56rem;
+}
+
+.imagetextInformation .topic{
+	text-align: center;
+	font-size: 0.8rem;
+	line-height: 2.35rem;
+}
+.imagetextInformation .date{
+	font-size: 0.5rem;
+	color: #999999;
+	line-height: 1.2rem;
+	margin-bottom: 0.45rem;
+}
+.imagetextInformation .picture{
+	width: 14.575rem;
+	height: 8.8rem;
+	margin-bottom: 0.2rem;
+}
+.imagetextInformation hr{
+	width: 90.3125%;
+}
+.imagetextInformation .text{
+	width:14.45rem ;
+	font-size: 0.6rem;
+	margin-left: 0.79rem;
+	text-indent: 1.125rem;
+	margin-top: 1rem;
+}
+.imagetextInformation .null{
+	width: 16rem;
+	height: 1rem;
+	background-color: #F7F7F7;
+}
+
+.video .topic{
+	text-align: center;
+	font-size: 0.8rem;
+	line-height: 2.35rem;
+}
+.video hr{
+	width: 90.3125%;
+}
+.video .across{
+	width: 100%;
+}
+.video .date{
+	font-size: 0.5rem;
+	color: #999999;
+	line-height: 1.2rem;
+	margin-bottom: 0.925rem;
+}
+.video .temporary{
+	width: 15rem;
+	height: 8rem;
+	margin-bottom: 2rem;
+	background-color: black;
+}
+.video video{
+	display: inline-block;
+	text-align: center;
+}
+.video .null{
+	width: 16rem;
+	height: 8.175rem;
+	background-color: #F7F7F7;
+}
+
+.booksInformation .frame{
+	width: 16rem;
+	height: 5.675rem;
+	padding-top: 0.475rem;
+	padding-left: 0.525rem;
+	background-color: white;
+}
+.booksInformation img{
+	display: block;
+	float: left;
+}
+.booksInformation .name{
+	float: left;
+	font-size: 0.65rem;
+	margin-left: 0.375rem;
+	margin-bottom: 0.385rem;
+}
+.booksInformation .text{
+	width: 10.5rem;
+	float: left;
+	font-size: 0.55rem;
+	margin-left: 0.375rem;
+	line-height: 0.88rem;
+}
+.booksInformation a{
+	color: crimson;
+	margin-left: 0.66rem;
+}
+.booksInformation .topic{
+	font-size: 0.65rem;
+	color: #333333;
+	line-height: 1.825rem;
+	text-indent: 0.5rem;
+}
+.booksInformation .temporary{
+	width: 15rem;
+	height: 8.75rem;
+	margin-bottom: 0.5rem;
+}
+.booksInformation hr{
+	width: 93%;
+}
+.booksInformation .across{
+	width: 100%;
+}
+.booksInformation .null{
+	width: 16rem;
+	height: 0.625rem;
+	background-color: #F7F7F7;
+}
+
+.map{
+	width: 16rem;
+	height: 23.2rem;
+	background-color: #76b9d3;
+	font-size: 0.55rem;
+	z-index: 1;
+}
+.map .shape{
+	width: 16rem;
+	height: 17.35rem;
+	padding-top: 0.8rem;
+}
+.map .shape img{
+	width: 100%;
+	height: 100%;
+}
+.map .purple{
+	width: 7.875rem;
+	float: left;
+	padding-left: 1.05rem;
+}
+.map .pink{
+	float: left;
+}
+.map .blue{
+	width: 7.875rem;
+	float: left;
+	padding-left: 1.05rem;
+}
+.map .brown{
+	float: left;
+}
+.map .orang{
+	width: 7.875rem;
+	float: left;
+	padding-left: 1.05rem;
+}
+.map  p{
+	display: inline-block;
+	float: left;
+	margin-right: 0.3rem;
+}
+.map img{
+	width: 0.7rem;
+	height: 0.7rem;
+	float: left;
+}
+.map .lineone{
+	width: 16rem;
+	height: 1.275rem;
+	margin-top: 0.7rem;
+}
+.map .linetwo{
+	width: 16rem;
+	height: 1.275rem;
+}
+.map .linethree{
+	width: 16rem;
+	height: 1.275rem;
+}
+.list{
+	display: none;
+	z-index: 2;
+	width: 10.5rem;
+	height: 23.2rem;
+	background-color: #ffffff;
+	position: absolute;
+	top: 2rem;
+	right: 0;
+	font-size: 0.7rem;
+	line-height: 1.5rem;
+	text-indent: 0.8rem;
+}
+.list hr{
+	width: 95%;
+}
+.list .return{
+	width: 4.35rem;
+	height: 1.3rem;
+	font-size: 0.6rem;
+	line-height: 1.3rem;
+	border: 0.05rem solid #999999;
+	border-radius: 1rem;
+	text-indent: 0;
+	text-align: center;
+	margin-top: 3rem;
+}
+

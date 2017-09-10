@@ -1,0 +1,41 @@
+<div class="pageContent">
+    <form method="post" action="__URL__/insert/navTabId/__MODULE__?callbackType=closeCurrent" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone)">
+        <input type="hidden" name="user_id" value="<?php echo $_SESSION[C('USER_AUTH_KEY')] ?>"/>
+        <input type="hidden" name="keyword" value="{$Think.request.keyword}"/>
+        <div class="pageFormContent" layoutH="58">
+            <div class="unit">
+                <label>名 称：</label>
+                <input type="text" class="required"   name="title">
+            </div>
+            <div class="unit">
+                <label>关键字：</label>
+                <input type="text" class="required"   name="key">
+            </div>
+            <div class="unit">
+                <label>字典值：</label>
+                <input type="text" class="required"   name="value">
+            </div>
+            <div class="unit">
+                <label>顺 序：</label>
+                <input type="text" class="required"   name="sort">
+            </div>
+            <div class="unit">
+                <label>备 注：</label>
+                <textarea name="memo" rows="3" cols="57"></textarea>
+            </div>
+            <div class="unit">
+                <label>状  态：</label>
+                <SELECT name="show">
+                    <option value="1">显示</option>
+                    <option value="0">隐藏</option>
+                </SELECT>
+            </div>
+        </div>
+        <div class="formBar">
+            <ul>
+                <li><div class="buttonActive"><div class="buttonContent"><button type="submit">保存</button></div></div></li>
+                <li><div class="button"><div class="buttonContent"><button type="button" class="close">取消</button></div></div></li>
+            </ul>
+        </div>
+    </form>
+</div>

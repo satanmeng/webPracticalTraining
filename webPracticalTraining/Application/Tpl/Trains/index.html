@@ -1,0 +1,120 @@
+﻿<include file="head" />
+<script type="text/javascript">
+          function buy(nkey){
+            $.post("__URL__/buyticket",{tid:nkey},function(data){
+                    alert(data);
+                    document.location.reload();
+            });
+          }
+
+    </script>
+    <section class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a class="menu-top-active" href="index.html">首页</a></li>
+                            <li><a href="__URL__/ui">个人信息</a></li>
+                            <li><a href="__URL__/table">个人订单</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="page-head-line">欢迎登陆火车订票系统</h4>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="alert alert-success">
+                        在这里可以查询你想要乘坐的列车
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            
+            <div class="row">
+            <div class="col-md-3">
+            <form method="post" action="">
+                <input type="hidden" name="start" value="{$_REQUEST.start}"/>
+                <input type="hidden" name="end" value="{$_REQUEST.end}"/>
+            </div>
+            <div class="col-md-3">
+            	<div class="form-group">
+    <label>起始站</label>
+    <input class="form-control" placeholder="起始站(必填)" name="start" id="start" value="{$_REQUEST.start}"/>
+  </div>
+            </div>
+            <div class="col-md-3">
+            	<div class="form-group">
+    <label>终点站</label>
+    <input class="form-control" placeholder="终点站(必填)" name="end" id="end" value="{$_REQUEST.end}"/>
+  </div>
+            </div>
+            <div class="col-md-3">
+            <div class="form-group">
+            	<button type="submit" class="btn btn-default">查询</button>
+         </div>
+            </div>
+            </div>
+            </form>
+            <br>
+            <div class="row">
+            <div class="col-md-12">
+            <div class="panel panel-default">
+                        <div class="panel-heading">
+                            列车信息表
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>列车号</th>
+                                            <th>起始站</th>
+                                            <th>终点站</th>
+                                            <th>始发时间</th>
+                                            <th>票价</th>
+                                            <th>余票</th>
+                                            <th>订票</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <volist id="vo" name="list">
+                                        <tr>
+                                            <td>{$vo.trains}</td>
+                                            <td>{$vo.start}</td>
+                                            <td>{$vo.end}</td>
+                                            <td>{$vo.stime}</td>
+                                            <td>{$vo.inprice}</td>
+                                            <td>{$vo['nkey']|getticket=$vo['ticket']}</td>
+                                            <td><a onclick="buy({$vo.nkey})" class="btn btn-danger btn-sm">购票</a></td>
+                                        </tr>
+                                    </volist>
+                                    </tbody>
+                                </table>
+                            </div>
+
+<!--分页插件-->
+                            <nav aria-label="Page navigation">
+                            <center><p>{$page}</p></center>
+                            </nav>
+<!--fenye-->
+
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            </div>
+            </div>
+<include file="footer" />

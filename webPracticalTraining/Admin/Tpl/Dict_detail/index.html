@@ -1,0 +1,73 @@
+<form id="pagerForm" action="__URL__" method="post">
+    <input type="hidden" name="pageNum" value="1"/>
+    <input type="hidden" name="_order" value="{$_REQUEST._order}"/>
+    <input type="hidden" name="_sort" value="{$_REQUEST._sort}"/>
+    <input type="hidden" name="relKeyword" value="{$Think.request.relKeyword}"/>
+</form>
+<div class="pageHeader">
+    <form onsubmit="return navTabSearch(this);" action="__URL__" method="post">
+        <input type="hidden" name="keyword" value="{$Think.request.keyword}"/>
+        <div class="searchBar">
+            <ul class="searchContent">
+                <li>
+                    <label>名称：</label>
+                    <input type="text" name="title" class="medium" >
+                </li>
+                <li>
+                    <label>关键字：</label>
+                    <input type="text" name="key" class="medium" >
+                </li>
+            </ul>
+            <div class="subBar">
+                <ul>
+                    <li><div class="buttonActive"><div class="buttonContent"><button type="submit">查询</button></div></div></li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="pageContent">
+    <div class="panelBar">
+        <ul class="toolBar">
+            <li><a class="add" href="__URL__/add/keyword/{$Think.request.keyword}" target="dialog" mask="true"><span>新增</span></a></li>
+            <li><a class="delete" href="__URL__/delete/nkey/{sid_class}/navTabId/__MODULE__" target="ajaxTodo" calback="navTabAjaxDone" title="你确定要删除吗？" warn="请选择节点"><span>删除</span></a></li>
+            <li><a class="edit" href="__URL__/edit/nkey/{sid_class}" target="dialog" mask="true" warn="请选择节点"><span>修改</span></a></li>
+        </ul>
+    </div>
+    <table class="table" width="100%" layoutH="138">
+        <thead>
+            <tr>
+                <th width="5%">编号</th>
+                <th width="15%">名称</th>
+                <th width="20%">关键字</th>
+                <th width="10%">字典值</th>
+                <th width="5%">顺序</th>
+                <th width="15%">备注</th>
+                <th width="5%">状态</th>
+            
+            </tr>
+        </thead>
+        <tbody>
+        <volist id="vo" name="list">
+            <tr target="sid_class" rel="{$vo['nkey']}">
+                <td>{$vo['id']}</td>
+                <td>{$vo['title']}</td>
+                <td>{$vo['key']}</td>
+                <td>{$vo['value']}</td>
+                <td>{$vo['sort']}</td>
+                <td>{$vo['memo']}</td>
+                <td>{$vo['status']|getStatus}</td>
+      
+            </tr>
+        </volist>
+        </tbody>
+    </table>
+
+    <div class="panelBar">
+        <div class="pages">
+            <span>共{$totalCount}条</span>
+        </div>
+        <div class="pagination" targetType="navTab" totalCount="{$totalCount}" numPerPage="{$numPerPage}" pageNumShown="10" currentPage="{$currentPage}"></div>
+    </div>
+</div>

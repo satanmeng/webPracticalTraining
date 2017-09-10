@@ -1,0 +1,69 @@
+<div class="pageContent">
+    <form method="post" action="__URL__/update/navTabId/__MODULE__?callbackType=closeCurrent" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone)">
+        <input type="hidden" name="user_id" value="<?php echo $_SESSION[C('USER_AUTH_KEY')] ?>"/>
+        <input type="hidden" name="id" value="{$vo.id}" />
+        <div class="pageFormContent" layoutH="56">
+            <div class="unit">
+                <label>用户名：</label>
+                <input type="text" class="required readonly"   name="account" value="{$vo.account}">
+            </div>
+
+            <div class="unit">
+                <label>昵称：</label>
+                <input type="text" class="" name="nickname" value="{$vo.nickname}">
+            </div>
+            <div class="unit">
+                <label>Email：</label>
+                <input type="text" name="email" size="30" maxlength="100" class="email" value="{$vo.email}">
+            </div>
+            <div class="unit">
+                <label>角色类型：</label>
+                <select id="role" name="role">
+                    <volist name="roles" id="ro">
+                        <option <eq name="role_id" value="$ro.id">selected</eq> value="{$ro['id']}">{$ro['name']}</option>
+                    </volist>
+                </select>
+            </div>
+            <div class="unit">
+                <label>关联店铺：</label>
+                <select id="shop" <eq name="role_id" value="1">disabled="disabled"</eq> name="shop_id">
+                    <option <eq name="vo.shop_id" value="0">selected</eq> value="0">--请选择店铺--</option>
+                    <volist  name="shops" id="so">
+                        <option <eq name="vo.shop_id" value="$so.id">selected</eq>  value="{$so['id']}">{$so['name']}</option>
+                    </volist>
+                </select>
+            </div>
+            <div class="unit">
+                <label>状态：</label>
+                <select class="small bLeft"  name="status">
+                    <option <eq name="vo.status" value="1" >selected</eq> value="1">启用</option>
+                    <option <eq name="vo.status" value="0" >selected</eq> value="0">禁用</option>
+                </select>
+            </div>
+
+            <div class="unit">
+                <label>备  注：</label>
+                <textarea class="large bLeft"  name="remark" rows="5" cols="57">{$vo.remark}</textarea>
+            </div>
+
+        </div>
+        <div class="formBar">
+            <ul>
+                <li><div class="buttonActive"><div class="buttonContent"><button type="submit">提交</button></div></div></li>
+                <li><div class="button"><div class="buttonContent"><button type="button" class="close">取消</button></div></div></li>
+            </ul>
+        </div>
+    </form>
+    <script>
+        $(function () {
+            $("#role").change(function () {
+                if ($(this).attr("value") == 1) {
+                    $("#shop").attr("disabled",'disabled');
+                } else {
+                    $("#shop").removeAttr("disabled");
+                }
+            });
+        });
+    </script>
+</div>
+

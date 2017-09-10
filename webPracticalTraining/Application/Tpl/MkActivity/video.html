@@ -1,0 +1,17 @@
+<include file="head" />
+	<body>
+		<div class="red"><center>视频资料<a href="__URL__/booksinformation">返回</a></center></div>
+	<div class="video">
+	    <div class="topic">{$news['title']}</div><center><hr /></center>
+	    <center><div class="date">{$news['pdate']}</div></center>
+	    <center><div class="temporary">
+	    	<video  style="height:100%;width: 100%;" controls="controls" poster="__PUBLIC__/MkActicity/img/17.1.png">
+            <source src="{$news['video']}" type="video/mp4"/>
+            Your browser does not support HTML5 video.
+            </video>
+	    </div></center>
+	    <hr class="across"/>
+	    <div class="null"></div>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+<form id="pagerForm" action="__URL__" method="post">
+    <input type="hidden" name="pageNum" value="1"/>
+    <input type="hidden" name="_order" value="{$_REQUEST._order}"/>
+    <input type="hidden" name="trains" value="{$_REQUEST.trains}"/>
+    <input type="hidden" name="_sort" value="{$_REQUEST._sort}"/>
+    <input type="hidden" name="relKeyword" value="{$Think.request.relKeyword}"/>
+</form>
+<div class="pageHeader">
+    <form onsubmit="return navTabSearch(this);" action="__URL__" method="post">
+        <div class="searchBar">
+            <ul class="searchContent">
+                <li>
+                    <label>列车名：</label>
+                    <input type="text" name="trains" class="medium" value="{$_REQUEST.trains}">
+                </li>
+            </ul>
+            <div class="subBar">
+                <ul>
+                    <li><div class="buttonActive"><div class="buttonContent"><button type="submit">查询</button></div></div></li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="pageContent">
+    <div class="panelBar">
+        <ul class="toolBar">
+           <li><a class="add" href="__URL__/add" target="dialog" mask="true"><span>新增</span></a></li>
+            <li><a class="delete" href="__URL__/delete/nkey/{sid_class}/navTabId/__MODULE__" target="ajaxTodo" calback="navTabAjaxDone" title="你确定要删除吗？" warn="请选择节点"><span>删除</span></a></li>
+            <li><a class="edit" href="__URL__/edit/nkey/{sid_class}" target="dialog" mask="true" warn="请选择节点"><span>修改</span></a></li>
+        </ul>
+    </div>
+    <table class="table" width="100%" layoutH="138">
+        <thead>
+            <tr>
+                <th width="5%">编号</th>
+                <th width="15%">列车号</th>
+                <th width="20%">起始站</th>
+                <th width="20%">终点站</th>
+                <th width="20%">始发时间</th>
+                <th width="15%">票价</th>
+                <th width="15%">票数</th>
+            </tr>
+        </thead>
+        <tbody>
+        <volist id="vo" name="list">
+            <tr target="sid_class" rel="{$vo['nkey']}">
+                <td>{$vo['nkey']}</td>
+                <td>{$vo['trains']}</td>
+                <td>{$vo['start']}</td>
+                <td>{$vo['end']}</td>
+                <td>{$vo['stime']}</td>
+                <td>{$vo['inprice']}</td>
+                <td>{$vo['ticket']}</td>
+            </tr>
+        </volist>
+        </tbody>
+    </table>
+
+    <div class="panelBar">
+        <div class="pages">
+            <span>共{$totalCount}条</span>
+        </div>
+        <div class="pagination" targetType="navTab" totalCount="{$totalCount}" numPerPage="{$numPerPage}" pageNumShown="10" currentPage="{$currentPage}"></div>
+    </div>
+</div>

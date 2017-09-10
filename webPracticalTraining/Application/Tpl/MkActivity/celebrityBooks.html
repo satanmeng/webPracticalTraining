@@ -1,0 +1,16 @@
+<include file="head" />
+	<body>
+		<div class="red"><center>名人荐书<a href="__URL__/generalize">返回</a></center></div>
+	<div class="celebrityBooks">
+	<volist name="notable" id='vo'>
+	<a href="__URL__/recommend/id/{$vo.id}">
+		<div class="frame">
+	        <img src="{$vo.pic}" style="width: 4.25rem;height: 4.75rem;"/>
+	        <p class="name">{$vo.title}</p>
+	        <p class="text">{$vo.desc}</p>
+	    </div>
+	</a>
+	</volist>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html> 
+	<meta charset="UTF-8">
+	<head></head>
+	<link rel="stylesheet" href="css/booksMarket.css"/> 
+		<script>
+            var pixclPatio = 1 / window.devicePixelRatio;
+            document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixclPatio + ',minimum-scale=' + pixclPatio + ',maximum-scale=' + pixclPatio + ',user-scalable=no" />');
+            var html = document.getElementsByTagName('html')[0];
+            var pageWidth = html.getBoundingClientRect().width;
+            html.style.fontSize = pageWidth / 16 + 'px';
+         </script>
+         
+<body> 
+        <script>
+            function change_pic(){
+            var imgObj = document.getElementById("caocao_pic");
+            var Flag=(imgObj.getAttribute("src",2)=="img/41.png")
+            imgObj.src=Flag?"img/42.png":"img/41.png";
+            }
+        </script>
+
+        <div class="scamTicketstop">
+	    
+     	<div class="agree">
+            <img src="img/41.png" class="wujiang_pic_size" id="caocao_pic" onClick="change_pic()">
+            	
+            </div>	
+     	</div>
+     	
+	</div>
+	
+	</div>
+</body> 
+</html>

@@ -1,0 +1,67 @@
+<form id="pagerForm" action="__URL__" method="post">
+    <input type="hidden" name="pageNum" value="1"/>
+    <input type="hidden" name="_order" value="{$_REQUEST._order}"/>
+    <input type="hidden" name="_sort" value="{$_REQUEST._sort}"/>
+    <input type="hidden" name="title" value="{$_REQUEST.username}"/>
+</form>
+<div class="pageHeader">
+    <form onsubmit="return navTabSearch(this);" action="__URL__" method="post">
+        <div class="searchBar">
+            <ul class="searchContent">
+                <li>
+                    <label>用户名：</label>
+                    <input type="text" name="username" class="medium" value="{$_REQUEST.username}"/>
+                </li>
+            </ul>
+            <div class="subBar">
+                <ul>
+                    <li><div class="buttonActive"><div class="buttonContent"><button type="submit">查询</button></div></div></li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="pageContent">
+    <div class="panelBar">
+        <ul class="toolBar">
+            <li><a class="delete" href="__URL__/foreverdelete/nkey/{sid_class}/navTabId/__MODULE__" target="ajaxTodo" calback="navTabAjaxDone" title="你确定要删除吗？" warn="请选择节点"><span>删除</span></a></li>
+        </ul>
+    </div>
+    <table class="table" width="100%" layoutH="138">
+        <thead>
+        <tr>
+        <th width="5%">编号</th>
+        <th width="5%">用户名</th>
+        <th width="10%">密码</th>
+        <th width="5%">个签</th>
+        <th width="20%">简介</th>
+        <th width="5%">真实姓名</th>
+        <th width="5%">头像</th>
+        <th width="10%">手机号码</th>
+        <th width="10%">身份证ID</th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist id="vo" name="list">
+            <tr target="sid_class" rel="{$vo['nkey']}">
+                <td>{$vo['nkey']}</td>
+                <td>{$vo['username']}</td>
+                <td>{$vo['password']}</td>
+                <td>{$vo['detail']}</td>
+                <td>{$vo['resume']}</td>
+                <td>{$vo['realname']}</td>
+                <td height="50em"><img height="50em" src="{$vo['pic']}" /></td>
+                <td>{$vo['tel']}</td>
+                <td>{$vo['oid']}</td>
+            </tr>
+        </volist>
+        </tbody>
+    </table>
+    <div class="panelBar">
+        <div class="pages">
+            <span>共{$totalCount}条</span>
+        </div>
+        <div class="pagination" targetType="navTab" totalCount="{$totalCount}" numPerPage="{$numPerPage}" pageNumShown="10" currentPage="{$currentPage}"></div>
+    </div>
+</div>

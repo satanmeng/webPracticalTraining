@@ -1,0 +1,26 @@
+<include file="head" />
+	<body>
+		<div class="red"><center>书市资讯<a href="__URL__/generalize">返回</a></center></div>
+	<div class="booksInformation">
+	<volist name="news" id='vo'>
+		<div class="frame">
+		<if condition="($vo['pic'] neq '' || $vo['introduce'] neq '')">
+			<img src="{$vo.pic}" style="width: 4.25rem;height: 4.75rem;"/>
+	        <p class="name">{$vo.title}</p>
+	        <p class="text">{$vo.introduce}<a href="__URL__/imagetextInformation/id/{$vo.id}">查看全部</a></p>
+		</if>
+		</div>
+	        <if condition="($vo['video'] neq '')">
+	        <div class="topic"><a href="__URL__/video/id/{$vo.id}">{$vo['title']}</a></div>
+	    <center><div class="temporary"><video  style="height:100%;width: 100%;" controls="controls" poster="__PUBLIC__/MkActivity/img/17.1.p">
+            <source src="{$vo['video']}" type="video/mp4"/>
+            Your browser does not support HTML5 video.
+            </video></div></center>
+	        </if>
+	         <center><hr></center>
+	</volist>
+    <hr class="across" />
+	    <div class="null"></div>
+	</div>
+	</body>
+</html>
