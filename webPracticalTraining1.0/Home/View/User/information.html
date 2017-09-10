@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="M_Adnan">
+<title>主页</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="__PUBLIC__/Css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="__PUBLIC__/Css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Css/ionicons.min.css" rel="stylesheet">
+<link href="__PUBLIC__/Css/main.css" rel="stylesheet">
+<link href="__PUBLIC__/Css/style01.css" rel="stylesheet">
+<link href="__PUBLIC__/Css/responsive.css" rel="stylesheet">
+  <link href="__PUBLIC__/Css/style02.css" rel='stylesheet' type='text/css'/>
+  <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+  <link href="__PUBLIC__/Css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Accessible Profile Widget Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+      <script src="__PUBLIC__/js/jquery.min.js"></script>
+      <script>$(document).ready(function(c) {
+      $('.alert-close').on('click', function(c){
+        $('.main-agile').fadeOut('slow', function(c){
+          $('.main-agile').remove();
+        });
+      });   
+    });
+    </script>
+</head>
+
+<!-- JavaScripts -->
+<script src="__PUBLIC__/js/modernizr.js"></script>
+
+<!-- Online Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Dosis|Libre+Baskerville|Open+Sans" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+<!-- header -->
+  <header>
+    <div class="sticky">
+      <div class="container"> 
+        
+        <!-- Logo -->
+        <div class="logo"> <a href="index.html"><img class="img-responsive" src="__PUBLIC__/Images/logo.png" alt="" ></a> </div>
+        <!-- Navigation -->
+        <nav class="navbar"> 
+          <!-- NAV -->
+          <ul class="nav ownmenu">
+            <li class="active"> <a href="index.html"> 主页 </a></li>
+            <li> <a href="{:U('User/inquire')}"> 查询订票 </a></li>
+            <li> <a href="{:U('User/information')}"> 个人信息 </a>
+            <li> <a href="{:U('User/order')}"> 我的订单 </a></li>
+            <li> <a href="{:U('Public/logout')}"> 退出 </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <h1>个人信息</h1>
+    <div class="main-agileits">
+    <div class="right-wthree">
+        <img src="__PUBLIC__/Images/火车1.jpg" alt="image" />
+        
+      </div>
+      <div class="left-w3ls">
+     <ul class="address">
+
+                          <li>
+                            <ul class="address-text">
+                              <li><b>用户名 </b></li>
+                              <li><a href="">: </a></li>
+                              <li>{$users['username']}</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <ul class="address-text">
+                              <li><b>姓名 </b></li>
+                              <li><a href="">: </a></li>
+                              <li>{$users['name']}</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <ul class="address-text">
+                              <li><b>电话 </b></li>
+                              <li>:</li>
+                              <li>{$users['tel']}</li>
+                            </ul>
+                          </li>
+
+                          <li>
+                            <ul class="address-text">
+                              <li><b>身份证号 </b></li>
+                              <li>: </li>
+                              <li>{$users['snumber']}</li>
+                            </ul>
+                          </li>
+                          
+                          
+                        </ul>
+        <div class="button">
+          <a href="{:U('User/changepwd')}" class="play-icon popup-with-zoom-anim">更改密码</a>
+        </div>
+        
+            <div id="small-dialog" class="mfp-hide w3ls_small_dialog wthree_pop">   
+            <div class="agileits_modal_body">
+              <iframe src="https://player.vimeo.com/video/8483438?title=0&byline=0&portrait=0"></iframe>
+            </div>
+          </div>
+  <!-- //pop-up-box -->
+          <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+          <script>
+          $(document).ready(function() {
+          $('.popup-with-zoom-anim').magnificPopup({
+          type: 'inline',
+          fixedContentPos: false,
+          fixedBgPos: true,
+          overflowY: 'auto',
+          closeBtnInside: true,
+          preloader: false,
+          midClick: true,
+          removalDelay: 300,
+          mainClass: 'my-mfp-zoom-in'
+          });
+
+          });
+          </script>
+
+      </div>
+      
+      <div class="clear"></div>
+    </div>
+  <footer>
+    <p class="agileinfo"> &copy; 2017 长春工程学院软件1541 </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+html {
+	background-color: #F9F9F9;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+}
+body {
+	margin: 0px;
+    padding: 0px;
+	font: 12px "sans-serif", "Arial", "Verdana";
+	background-color: #F9F9F9;
+	font-family: Verdana, Arial,Vrinda,Tahoma;
+	line-height: 175%;
+	font-size:12px;
+	color:#666;
+}
+a {
+	color: #555;
+	text-decoration:none;
+}
+a:hover {
+	color: #0099CC;
+}
+ul{
+    margin:0;
+	padding:0;
+	list-style-position: outside;
+	list-style-type: none;
+}
+li{
+	margin:0;
+	padding:0;
+}
+div{
+	margin:0;
+	padding:0;
+}
+div.message{
+    height: 200px;
+	width: 40%;
+	border: 1px solid #B4C9C6;
+	margin:15% auto 0% auto;
+	background-color:#FFFFFF;
+	padding: 0;
+	overflow: auto;
+	clear:both;
+	text-align:center;
+	float:none;
+	overflow:hidden;
+}
+div.message_box {
+	width: 100%;
+	background-image: url(../Images/manage_r3_c11.jpg);
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #B4C9C6;
+	height: 27px;
+	background-repeat: repeat-x;
+	padding: 5px 0 0 0;
+	margin:0;
+}
+#message_content .line {
+	background-color: #F3F8F7;
+	color:#73938E;
+	font-weight:bold;
+	text-align:center;
+	height:200px
+}

@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="M_Adnan">
+    <title>主页</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="__PUBLIC__/Css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="__PUBLIC__/Css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/Css/ionicons.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/main.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/style01.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/responsive.css" rel="stylesheet">
+    <!-- JavaScripts -->
+    <script src="__PUBLIC__/js/modernizr.js"></script>
+    <!-- Online Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Libre+Baskerville|Open+Sans" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>我的订单</title>
+    <link rel="stylesheet" href="__PUBLIC__/Css/style04.css" type="text/css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="sticky">
+            <div class="container">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html"><img class="img-responsive" src="__PUBLIC__/Images/logo.png" alt=""></a>
+                </div>
+                <!-- Navigation -->
+                <nav class="navbar">
+                    <!-- NAV -->
+                    <ul class="nav ownmenu">
+                        <li class="active"> <a href="index.html"> 主页 </a></li>
+                        <li> <a href="{:U('User/inquire')}"> 查询订票 </a></li>
+                        <li> <a href="{:U('User/information')}"> 个人信息 </a>
+                            <li> <a href="{:U('User/order')}"> 我的订单 </a></li>
+                            <li> <a href="{:U('Public/logout')}"> 退出 </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <h1>
+<table class="zebra">
+    <caption>我的订单信息</caption></table></h1>
+        <volist name='user_order' id='vo'>
+            <table class="zebra">
+                <div class="left-w3ls">
+                    <div id="order" style="border-style: solid;">
+                        <ul class="address">
+                            <li>
+                                <ul class="address-text">
+                                    <li><b>姓名 </b></li>
+                                    <li>:{$users['name']}</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="address-text">
+                                    <li><b>车票列车号 </b></li>
+                                    <li>:{$vo.serialnumber}</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="address-text">
+                                    <li><b>始发站 </b></li>
+                                    <li>:{$vo.departurepoint}</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="address-text">
+                                    <li><b>终点站 </b></li>
+                                    <li>: {$vo.terminalpoint}</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="address-text">
+                                    <li><b>始发时间 </b></li>
+                                    <li>: {$vo.setout}</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="button">
+                        <a class="play-icon popup-with-zoom-anim" href="{:U('User/reticket',array('oid'=>$vo['oid'],'tid'=>$vo['tid']))}">退票</a>
+                    </div>
+        </volist>
+        </tbody>
+        </table>
+        </div>
+        <center>
+            <div class="rights">
+                <p>Copyright &copy; 2017.长春工程学院软件1541</p>
+            </div>
+            <script src="__PUBLIC__/js/jquery.min.js"></script>
+            <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+            <script src="__PUBLIC__/js/own-menu.js"></script>
+            <script src="__PUBLIC__/js/owl.carousel.min.js"></script>
+            <script src="__PUBLIC__/js/main.js"></script>
+        </center>
+</body>
+
+</html>

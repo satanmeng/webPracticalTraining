@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="M_Adnan">
+<title>主页</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="__PUBLIC__/Css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="__PUBLIC__/Css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Css/ionicons.min.css" rel="stylesheet">
+<link href="__PUBLIC__/Css/main.css" rel="stylesheet">
+<link href="__PUBLIC__/Css/style01.css" rel="stylesheet">
+<link href="__PUBLIC__/Css/responsive.css" rel="stylesheet">
+
+<!-- JavaScripts -->
+<script src="__PUBLIC__/js/modernizr.js"></script>
+
+<!-- Online Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Dosis|Libre+Baskerville|Open+Sans" rel="stylesheet">
+
+</head>
+<body style="background: url(__PUBLIC__/Images/body.jpg);">
+
+
+  
+  <!-- header -->
+  <header>
+    <div class="sticky">
+      <div class="container"> 
+        
+        <!-- Logo -->
+        <div class="logo"> <a href="index.html"><img class="img-responsive" src="__PUBLIC__/Images/logo.png" alt="" ></a> </div>
+        <!-- Navigation -->
+        <nav class="navbar"> 
+          <!-- NAV -->
+          <ul class="nav ownmenu">
+            <li class="active"> <a href="index.html"> 主页 </a></li>
+            <li> <a href="{:U('User/inquire')}"> 查询订票 </a></li>
+            <li> <a href="{:U('User/information')}"> 个人信息 </a>
+            <li> <a href="{:U('User/order')}"> 我的订单 </a></li>
+            <li> <a href="{:U('Public/logout')}"> 退出 </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+ 
+  <!-- Content -->
+  <div id="content"> 
+    
+    <!-- 查询订票 -->
+    <section class="power-hosting padding-top-100 padding-bottom-100">
+      <div class="container"> 
+      <center><h3 style="color: white">欢迎用户{$username}登录</h3></center>
+      <!--<div align="center" id="central" class="central"><!--<img src="__PUBLIC__/Images/首页火车.jpg" alt=""></div>-->
+  <div class="rights">
+    <p>Copyright &copy; 2017.长春工程学院软件1541</p>
+  </div>
+</div>
+<script src="__PUBLIC__/js/jquery.min.js"></script> 
+<script src="__PUBLIC__/js/bootstrap.min.js"></script> 
+<script src="__PUBLIC__/js/own-menu.js"></script> 
+<script src="__PUBLIC__/js/owl.carousel.min.js"></script> 
+<script src="__PUBLIC__/js/main.js"></script> 
+</body>
+</html>

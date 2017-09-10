@@ -1,0 +1,121 @@
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="M_Adnan">
+<title>主页</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="__PUBLIC__/Css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="__PUBLIC__/Css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Css/ionicons.min.css" rel="stylesheet">
+<link href="__PUBLIC__/Css/main.css" rel="stylesheet">
+<link href="__PUBLIC__/Css/style01.css" rel="stylesheet">
+<link href="__PUBLIC__/Css/responsive.css" rel="stylesheet">
+
+<!-- JavaScripts -->
+<script src="__PUBLIC__/js/modernizr.js"></script>
+
+<!-- Online Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Dosis|Libre+Baskerville|Open+Sans" rel="stylesheet">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>查询</title>
+    <link rel="stylesheet" href="__PUBLIC__/Css/style03.css" type="text/css">
+
+</head>
+<body>
+
+
+  
+  <!-- header -->
+  <header>
+    <div class="sticky">
+      <div class="container"> 
+        
+        <!-- Logo -->
+        <div class="logo"> <a href="index.html"><img class="img-responsive" src="__PUBLIC__/Images/logo.png" alt="" ></a> </div>
+        <!-- Navigation -->
+        <nav class="navbar"> 
+          <!-- NAV -->
+          <ul class="nav ownmenu">
+            <li class="active"> <a href="index.html"> 主页 </a></li>
+            <li> <a href="{:U('User/inquire')}"> 查询订票 </a></li>
+            <li> <a href="{:U('User/information')}"> 个人信息 </a>
+            <li> <a href="{:U('User/order')}"> 我的订单 </a></li>
+            <li> <a href="{:U('Public/logout')}"> 退出 </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+<div id="container">   
+
+  <table class="zebra">
+    <caption>查询车票服务</caption>
+     <caption style="color: black;"><form action="" method="post">
+      <label style="color: white;">请输入您要查询的列车号:</label><input type="text" name="serialnumber" id="serialnumber">
+      <input type="submit" value="提交">
+      <input type="reset" value="重置"/>
+
+    </form></caption>
+
+    <thead>
+          <tr>
+        <th>列车号</th>
+        <th>始发站</th>
+        <th>终点站</th>
+        <th>始发时间</th>
+        <th>剩余票数</th>
+        <th>单价</th>
+        <th></th>
+            </tr>
+    </thead>
+        <tbody>
+          <volist name='serial' id='vo'>
+        <tr>
+          <td>
+            {$vo.serialnumber}
+          </td>
+          <td>
+            {$vo.departurepoint}
+          </td>
+          <td>
+            {$vo.terminalpoint}
+          </td>
+          <td>
+            {$vo.setout}
+          </td>
+          <td>
+            {$vo.renumber}
+          </td>
+          <td>{$vo.inprice}</td>
+          <td>
+            <a href="{:U('User/buyticket',array('tid'=>$vo['tid']))}">订票</a>
+          </td>
+        </tr>
+      </volist>
+        </tbody>
+  </table>
+</div>
+    <div class="rights">
+    <p>Copyright &copy; 2017.长春工程学院软件1541</p>
+  </div>
+<script src="__PUBLIC__/js/jquery.min.js"></script> 
+<script src="__PUBLIC__/js/bootstrap.min.js"></script> 
+<script src="__PUBLIC__/js/own-menu.js"></script> 
+<script src="__PUBLIC__/js/owl.carousel.min.js"></script> 
+<script src="__PUBLIC__/js/main.js"></script> 
+
+<!-- Begin Map Script
+<script src="http://ditu.google.cn/maps/api/js?v=3.exp"></script> 
+<script src="js/map.js"></script>-->
+</body>
+</html>

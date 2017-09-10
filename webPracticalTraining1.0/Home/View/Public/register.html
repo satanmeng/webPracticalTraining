@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>传智学员信息登记表</title>
+<link rel="stylesheet" href="__PUBLIC__/Css/style07.css" type="text/css">
+</head>
+<script type="text/javascript">
+	function checkform()
+	{
+		var errorcount=0;
+		if(document.getElementById("user_name").value=="")
+		{
+			alert("登录名不允许为空");
+			errorcount++;
+		}
+		if(document.getElementById("user_password").value=="")
+		{
+			alert("密码不允许为空");
+			errorcount++;
+		}
+		if(document.getElementById("real_name").value=="")
+		{
+			alert("真实姓名不允许为空");
+			errorcount++;
+		}
+		if(document.getElementById("card").value=="")
+		{
+			alert("身份证号不允许为空");
+			errorcount++;
+		}
+		if(document.getElementById("telphone").value=="")
+		{
+			alert("手机号码不允许为空");
+			errorcount++;
+		}
+		if(errorcount>0)
+		{
+			return false;
+		}
+		return true;
+	}
+</script>
+<body>
+<div class="bg">
+    <form action="__URL__/adduser/" method="post">
+    <h2>用户注册表</h2>
+    <p><span>用户登录名：</span><input type="text" name="user_name" id="user_name"/>（必须填写）</p>
+    <p><span>用户密码：</span><input type="text" name="user_password" id="user_password"/>（必须填写）</p>
+    <p><span>真实姓名：</span><input type="text" name="real_name" id="real_name"  pattern="^[\u4e00-\u9fa5]{0,}$" placeholder="例如：王明" required autofocus/>（必须填写，只能输入汉字）</p>
+    <p><span>身份证号：</span><input type="text" name="card" id="card" required pattern="^\d{8,18}|[0-9x]{8,18}|[0-9X]{8,18}?$"/>（必须填写，能够以数字、字母x结尾的短身份证号）</p>
+    <p><span>手机号码：</span><input type="tel" name="telphone" id="telphone" pattern="^\d{11}$" required/>（必须填写）</p>
+    <p class="btn">
+    <input type="submit" value="提交" onclick="return checkform()" />
+    <input type="reset" value="重置"/>
+    </p>
+    <p>
+    	<a href="{:U('Public/login')}"><img height="40" width="40" src="__PUBLIC__/Images/return.png"></a>
+    </p>
+    </form>
+</div>
+</body>
+</html>

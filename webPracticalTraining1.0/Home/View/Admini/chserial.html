@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="M_Adnan">
+    <title>添加车次</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="__PUBLIC__/Css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="__PUBLIC__/Css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/Css/ionicons.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/main.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/style01.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="__PUBLIC__/Css/style03.css" type="text/css">
+    <!-- JavaScripts -->
+    <script src="__PUBLIC__/js/modernizr.js"></script>
+    <!-- Online Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Libre+Baskerville|Open+Sans" rel="stylesheet">
+    <script type="text/javascript">
+    function checkform() {
+        var errorcount = 0;
+        if (document.getElementById("serialnumber").value == "") {
+            alert("列车号不允许为空");
+            errorcount++;
+        }
+        if (document.getElementById("departurepoint").value == "") {
+            alert("始发站不允许为空");
+            errorcount++;
+        }
+        if (document.getElementById("terminalpoint").value == "") {
+            alert("终点站不允许为空");
+            errorcount++;
+        }
+        if (document.getElementById("setout").value == "") {
+            alert("始发时间不允许为空");
+            errorcount++;
+        }
+        if (document.getElementById("fixnumber").value == "") {
+            alert("座位数不允许为空");
+            errorcount++;
+        }
+        if (errorcount > 0) {
+            return false;
+        }
+        return true;
+    }
+    </script>
+</head>
+
+<body style="background: url(__PUBLIC__/Images/body.jpg);">
+    <!-- header -->
+    <header>
+        <div class="sticky">
+            <div class="container">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html"><img class="img-responsive" src="__PUBLIC__/Images/logo.png" alt=""></a>
+                </div>
+                <!-- Navigation -->
+                <nav class="navbar">
+                    <!-- NAV -->
+                    <ul class="nav ownmenu">
+                        <li class="active"> <a href="index.html"> 主页 </a></li>
+                        <li> <a href="{:U('Admini/inquire')}"> 查询订票 </a></li>
+                        <li> <a href="{:U('Admini/chserial')}">添加车次 </a>
+                            <li> <a href="{:U('Admini/chticket')}"> 添加车票 </a></li>
+                            <li> <a href="{:U('Public/logout')}"> 退出 </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <center>
+        <div id="container">
+            <h2 style="color: white">添加车次表</h2>
+            <br>
+            <form method="post" action="">
+                <table class="zebra">
+                    <tr>
+                        <td>
+                            列车号：
+                        </td>
+                        <td style="color: black">
+                            <input type="text" name="serialnumber" id="serialnumber" /> （必须填写）
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            始发站：
+                        </td>
+                        <td style="color: black">
+                            <input type="text" name="departurepoint" id="departurepoint" /> （必须填写）
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            终点站：
+                        </td>
+                        <td style="color: black">
+                            <input type="text" name="terminalpoint" id="terminalpoint" /> （必须填写）
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            始发时间：
+                        </td>
+                        <td style="color: black">
+                            <input type="text" name="setout" id="setout" /> （必须填写）
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            座位数：
+                        </td>
+                        <td style="color: black">
+                            <input type="text" name="fixnumber" id="fixnumber" /> （必须填写）
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: black">
+                            <input type="submit" value="提交" onclick="return checkform()" />
+                        </td>
+                        <td style="color: black">
+                            <input type="reset" value="重置" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+    <div class="container">
+        <div class="rights">
+            <p>Copyright &copy; 2017.长春工程学院软件1541</p>
+        </div>
+    </div>
+    <script src="__PUBLIC__/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/js/own-menu.js"></script>
+    <script src="__PUBLIC__/js/owl.carousel.min.js"></script>
+    <script src="__PUBLIC__/js/main.js"></script>
+    <!-- Begin Map Script
+<script src="http://ditu.google.cn/maps/api/js?v=3.exp"></script> 
+<script src="js/map.js"></script>-->
+</body>
+
+</html>

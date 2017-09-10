@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtr=device-widtr, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="autror" content="M_Adnan">
+    <title>主页</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="__PUBLIC__/Css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="__PUBLIC__/Css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/Css/ionicons.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/main.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/style01.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="__PUBLIC__/Css/style03.css" type="text/css">
+    <!-- JavaScripts -->
+    <script src="__PUBLIC__/js/modernizr.js"></script>
+    <!-- Online Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Libre+Baskerville|Open+Sans" rel="stylesheet">
+    <script src="__PUBLIC__/js/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("select").change(function() {
+            var selectvalue = $(this).val();
+            $.get("__URL__/explore?serialnumber=" + selectvalue, function(data) {
+                data = eval("(" + data + ")");
+                if (data != null) {
+                    $("#totalticket").html(data['total']);
+                    $("#renumber").html(data['renumber']);
+                } else {
+                    $("#totalticket").html("0");
+                    $("#renumber").html("0");
+                }
+            });
+        });
+    });
+    </script>
+</head>
+
+<body style="background: url(__PUBLIC__/Images/body.jpg);">
+    <!-- header -->
+    <header>
+        <div class="sticky">
+            <div class="container">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html"><img class="img-responsive" src="__PUBLIC__/Images/logo.png" alt=""></a>
+                </div>
+                <!-- Navigation -->
+                <nav class="navbar">
+                    <!-- NAV -->
+                    <ul class="nav ownmenu">
+                        <li class="active"> <a href="index.html"> 主页 </a></li>
+                        <li> <a href="{:U('Admini/inquire')}"> 查询订票 </a></li>
+                        <li> <a href="{:U('Admini/chserial')}">添加车次 </a>
+                            <li> <a href="{:U('Admini/chticket')}"> 添加车票 </a></li>
+                            <li> <a href="{:U('Public/logout')}"> 退出 </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <center>
+        <div id="container">
+            <h2 style="color: white">添加车票表</h2>
+            <br>
+            <form method="post" action="__URL__/chticket">
+                <table class="zebra">
+                    <tr>
+                        <td>
+                            列车号：
+                        </td>
+                        <td style="color: black">
+                            <select name="serialnumber" id="serialnumber">
+                                <volist name='serial' id='vo'>
+                                    <option value="{$vo.serialnumber}">{$vo.serialnumber}</option>
+                                </volist>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            总票数：
+                        </td>
+                        <td>
+                            <label name="totalticket" id="totalticket" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            剩余车票：
+                        </td>
+                        <td>
+                            <label name="renumber" id="renumber" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            添加车票数:
+                        </td>
+                        <td style="color: black">
+                            <input type="text" name="total" id="total" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            车票单价:
+                        </td>
+                        <td style="color: black">
+                            <input type="text" name="inprice" id="inprice" /> (必须填写)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: black">
+                            <input type="submit" value="提交" />
+                        </td>
+                        <td style="color: black">
+                            <input type="reset" value="重置" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+    <div class="container">
+        <div class="rights">
+            <p>Copyright &copy; 2017.长春工程学院软件1541</p>
+        </div>
+    </div>
+    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/js/own-menu.js"></script>
+    <script src="__PUBLIC__/js/owl.carousel.min.js"></script>
+    <script src="__PUBLIC__/js/main.js"></script>
+    <!-- Begin Map Script
+<script src="http://ditu.google.cn/maps/api/js?v=3.exp"></script> 
+<script src="js/map.js"></script>-->
+</body>
+
+</html>

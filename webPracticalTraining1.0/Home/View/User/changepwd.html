@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>更改密码</title>
+	<link href="__PUBLIC__/Css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="__PUBLIC__/Css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Css/ionicons.min.css" rel="stylesheet">
+<link href="__PUBLIC__/Css/main.css" rel="stylesheet">
+<link href="__PUBLIC__/Css/style01.css" rel="stylesheet">
+<link href="__PUBLIC__/Css/responsive.css" rel="stylesheet">
+
+<!-- JavaScripts -->
+<script src="__PUBLIC__/js/modernizr.js"></script>
+
+<!-- Online Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Dosis|Libre+Baskerville|Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="__PUBLIC__/Css/style03.css" type="text/css">
+</head>
+<body>
+<div class="container">
+<h2 style="text-align: center;color: white;">修改密码</h2>
+<form action="" method="post">
+	<table class="zebra">
+		<tr>
+			<td>
+				新密码：
+			</td>
+			<td style="color: black">
+				<input type="text" name="password" id="password">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				再次确认密码：
+			</td>
+			<td style="color: black">
+				<input type="text" name="repassword" id="repassword">
+			</td>
+		</tr>
+		<tr>
+			<td style="color: black">
+				<input type="submit" value="确定">
+			</td>
+			<td style="color: black">
+				<input type="reset" name="取消">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><a href="{:U('User/index')}">返回</a></td>
+		</tr>
+	</table>
+</form>
+</div>
+</body>
+</html>
